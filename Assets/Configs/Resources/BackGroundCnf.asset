@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb552f1d0a9f4c499669edc2f7784776, type: 3}
+  m_Name: BackGroundCnf
+  m_EditorClassIdentifier: 
+  SkyTexture: {fileID: 3292796719725119810, guid: 26e8ea4bdc8192649a94a29a287b59e0,
+    type: 3}
+  MountainsBackGroundSlow: {fileID: 3806527332218004239, guid: 60da5246fc311bc4cb52b2c87e40960d,
+    type: 3}
+  MountainsBackGroundFast: {fileID: 6293252896309939796, guid: b616a3b3840b1b7458491771541fc65d,
+    type: 3}
+  MountainsForeGround: {fileID: 7329408483210752502, guid: eb95b7b4f4f2a6c45945cef75f910bc1,
+    type: 3}
+  SkyBackGround: {fileID: 0}
+  SkyForeGround: {fileID: 0}
+  _slowSpeedBackGround: 0.3
+  _fastSpeedBackGround: 0.4
+  _speedForeGround: 0.5

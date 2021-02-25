@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8462b39a-2be9-4961-8092-46aeed32d545" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/BackGroundCnf.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/BackGroundCnf.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/BackGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/BackGround.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/Font.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/Font.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/MiddleGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/MiddleGround.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/SkyBackGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/SkyBackGround.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/BackGroundConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/BackGroundConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI ( Update 1.7 ).meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/SpritesFreeCryptogen.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Water Animation.meta" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ParalaxController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/BackGroundConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ouw6rIpfi5gVBRI8fdnV5H8O6u" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3002736" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13688">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="13688" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="471" height="464" key="DebuggerActiveHint" timestamp="1614256607078">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="471" height="464" key="DebuggerActiveHint/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614256607078" />
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1614265379711">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379711" />
+    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1614265379711">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379711" />
+    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1614265379711">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379711" />
+    <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.1.center" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.1.left" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.1.right" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.2.bottom" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.2.center" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.2.left" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.2.right" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.3.bottom" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.3.center" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.3.left" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state width="1493" height="279" key="GridCell.Tab.3.right" timestamp="1614265379712">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state width="1493" height="279" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
+    <state x="2521" y="-40" key="RiderGenerateDialog" timestamp="1614234989799">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state x="2521" y="-40" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614234989799" />
+  </component>
+</project>

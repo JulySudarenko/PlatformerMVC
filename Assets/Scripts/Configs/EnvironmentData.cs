@@ -11,7 +11,7 @@ namespace Platformer
 
         private ItemConfig _coinCnf;
         private ItemConfig _rocketCnf;
-        private BackGroundConfig _backgroundCnf;
+        private BackGroundConfig[] _backgroundCnf;
 
         public ItemConfig CoinCnf
         {
@@ -39,15 +39,11 @@ namespace Platformer
             }
         }
 
-        public BackGroundConfig BackGroundConfig
+        public BackGroundConfig[] BackGroundConfig
         {
             get
             {
-                if (_backgroundCnf == null)
-                {
-                    _backgroundCnf = Extentions.Load<BackGroundConfig>(_backgroundCnfPath);
-                }
-
+                _backgroundCnf = Extentions.LoadAll<BackGroundConfig>(_backgroundCnfPath); // + _backgroundCnfPath);
                 return _backgroundCnf;
             }
         }

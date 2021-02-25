@@ -9,9 +9,6 @@ namespace Platformer
         [SerializeField] private EnvironmentData _environmentData;
         private Controllers _controllers;
 
-        [SerializeField] private Transform _back;
-        [SerializeField] private Transform _middle;
-        [SerializeField] private Transform _front;
         [SerializeField] private LevelObjectView _playerView;
         [SerializeField] private LevelObjectView _snailView;
         [SerializeField] private LevelObjectView _coinView;
@@ -23,30 +20,15 @@ namespace Platformer
 
         private void Awake()
         {
-            var camera = Camera.main;
+            var camera = new CameraController(_playerView.Transform);
+            var paralaxController = new ParalaxController(camera, _environmentData.BackGroundConfig);
+
             var redSpotAnimator = new SpriteAnimator(_animationData.RedSpotAnimatorCnf);
             var snailAnimator = new SpriteAnimator(_animationData.SnailAnimatorCnf);
             var coinAnimator = new SpriteAnimator(_animationData.CoinAnimatorCnf);
             var rocketAnimator = new SpriteAnimator(_animationData.RocketAnimatorCnf);
             var batAnimator = new SpriteAnimator(_animationData.BatEnemyAnimatorCnf);
             var evilBatAnimator = new SpriteAnimator(_animationData.EvilBatEnemyAnimatorCnf);
-
-            var paralaxBack = new ParalaxManager(camera.transform, _back,
-                _environmentData.BackGroundConfig.SlowSpeedBackGround);
-            var paralaxMiddle = new ParalaxManager(camera.transform, _middle,
-                _environmentData.BackGroundConfig.FastSpeedBackGround);
-            var paralaxFront = new ParalaxManager(camera.transform, _front,
-                _environmentData.BackGroundConfig.SpeedForeGround);
-
-            //var paralaxBack = new ParalaxManager(camera.transform,
-            //     _environmentData.BackGroundConfig.MountainsBackGroundSlow,
-            //     _environmentData.BackGroundConfig.SlowSpeedBackGround);
-            // var paralaxMiddle = new ParalaxManager(camera.transform,
-            //     _environmentData.BackGroundConfig.MountainsBackGroundFast,
-            //     _environmentData.BackGroundConfig.FastSpeedBackGround);
-            // var paralaxFront = new ParalaxManager(camera.transform,
-            //     _environmentData.BackGroundConfig.MountainsForeGround,
-            //     _environmentData.BackGroundConfig.FastSpeedBackGround);
 
             _controllers = new Controllers();
             _controllers.Add(redSpotAnimator);
@@ -55,9 +37,7 @@ namespace Platformer
             _controllers.Add(rocketAnimator);
             _controllers.Add(batAnimator);
             _controllers.Add(evilBatAnimator);
-            _controllers.Add(paralaxBack);
-            _controllers.Add(paralaxMiddle);
-            _controllers.Add(paralaxFront);
+            _controllers.Add(paralaxController);
 
             redSpotAnimator.StartAnimation(_playerView.SpriteRenderer, _animState, true, _animationSpeed);
             snailAnimator.StartAnimation(_snailView.SpriteRenderer, _animState, true, _animationSpeed);

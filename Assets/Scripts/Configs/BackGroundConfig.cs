@@ -5,21 +5,17 @@ namespace Platformer
     [CreateAssetMenu(fileName = "BackGroundConfig", menuName = "Configs/BackGroundConfig", order = 0)]
     public class BackGroundConfig : ScriptableObject
     {
-        public Transform SkyTexture;
-        public Transform MountainsBackGroundSlow;
-        public Transform MountainsBackGroundFast;
-        public Transform MountainsForeGround;
-        public Transform SkyBackGround;
-        public Transform SkyForeGround;
+        public GameObject BackGround;
+        [SerializeField] private float _size = 20.48f;
+        [SerializeField] private float _sizeCoefficient = 3.0f;
+        [SerializeField] private float _speedCoefficient;
+        [SerializeField] private bool _isPlaceChanging = false;
+        [SerializeField] private bool _isSizeChanging = false;
 
-        [SerializeField] private float _slowSpeedBackGround;
-        [SerializeField] private float _fastSpeedBackGround;
-        [SerializeField] private float _speedForeGround;
-
-        public float SlowSpeedBackGround => _slowSpeedBackGround;
-
-        public float FastSpeedBackGround => _fastSpeedBackGround;
-
-        public float SpeedForeGround => _speedForeGround;
+        public float SpeedCoefficient => _speedCoefficient;
+        public float Size => _size;
+        public float SizeCoefficient => _sizeCoefficient;
+        public bool IsPlaceChanging => _isPlaceChanging;
+        public bool IsSizeChanging => _isSizeChanging;
     }
 }

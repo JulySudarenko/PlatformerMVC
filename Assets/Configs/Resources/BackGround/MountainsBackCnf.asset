@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb552f1d0a9f4c499669edc2f7784776, type: 3}
+  m_Name: MountainsBackCnf
+  m_EditorClassIdentifier: 
+  BackGround: {fileID: 7883060088780869694, guid: 60da5246fc311bc4cb52b2c87e40960d,
+    type: 3}
+  _size: 20.48
+  _sizeCoefficient: 3
+  _speedCoefficient: 0.3
+  _isPlaceChanging: 0
+  _isSizeChanging: 0

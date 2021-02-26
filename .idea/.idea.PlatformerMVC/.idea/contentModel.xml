@@ -14,8 +14,8 @@
             <e p="Extentions.cs" t="Include" />
           </e>
           <e p="BackGround" t="Include">
+            <e p="ParalaxBackGround.cs" t="Include" />
             <e p="ParalaxController.cs" t="Include" />
-            <e p="ParalaxManager.cs" t="Include" />
           </e>
           <e p="Configs" t="Include">
             <e p="AnimationData.cs" t="Include" />

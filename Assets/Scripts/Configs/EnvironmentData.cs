@@ -43,7 +43,7 @@ namespace Platformer
         {
             get
             {
-                _backgroundCnf = Extentions.LoadAll<BackGroundConfig>(_backgroundCnfPath); // + _backgroundCnfPath);
+                _backgroundCnf = Extentions.LoadAll<BackGroundConfig>(_backgroundCnfPath);
                 return _backgroundCnf;
             }
         }

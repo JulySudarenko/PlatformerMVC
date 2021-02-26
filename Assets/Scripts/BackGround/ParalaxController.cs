@@ -6,14 +6,14 @@ namespace Platformer
     {
         private ICamera _camera;
         private BackGroundConfig[] _back;
-        private ParalaxManager[] _managers;
+        private ParalaxBackGround[] _managers;
         private GameObject _root;
 
         public ParalaxController(ICamera camera, BackGroundConfig[] data)
         {
             _camera = camera;
             _back = data;
-            _managers = new ParalaxManager[data.Length];
+            _managers = new ParalaxBackGround[data.Length];
             _root = new GameObject("root");
         }
 
@@ -26,7 +26,7 @@ namespace Platformer
                 back = _back[i].IsPlaceChanging ? ChangePosition(back, _back[i].SizeCoefficient) : back;
                 back = _back[i].IsSizeChanging ? ChangeSize(back, _back[i].SizeCoefficient) : back;
 
-                var paralaxManager = new ParalaxManager(_camera, back.transform, _back[i]);
+                var paralaxManager = new ParalaxBackGround(_camera, back.transform, _back[i]);
                 _managers[i] = paralaxManager;
             }
         }
@@ -35,7 +35,7 @@ namespace Platformer
         {
             for (int i = 0; i < _managers.Length; i++)
             {
-                _managers[i].Execute(deltaTime);
+                _managers[i].Execute();
             }
         }
 

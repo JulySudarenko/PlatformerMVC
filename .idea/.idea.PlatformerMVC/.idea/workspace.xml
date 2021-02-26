@@ -20,24 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8462b39a-2be9-4961-8092-46aeed32d545" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/BackGroundCnf.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/BackGroundCnf.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/BackGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/BackGround.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/Font.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/Font.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/MiddleGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/MiddleGround.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/SkyBackGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/SkyBackGround.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/BackGroundConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/BackGroundConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI ( Update 1.7 ).meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/SpritesFreeCryptogen.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Water Animation.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +40,15 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ParalaxController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/BackGroundConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/SpriteAnimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs" />
       </list>
     </option>
   </component>
@@ -77,10 +68,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13688">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13688" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>

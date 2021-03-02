@@ -9,8 +9,8 @@ namespace Platformer
         [SerializeField] private EnvironmentData _environmentData;
         private Controllers _controllers;
 
-        [SerializeField] private LevelObjectView _playerView;
-        [SerializeField] private LevelObjectView _snailView;
+        [SerializeField] private Transform _cannon;
+        [SerializeField] private LevelObjectView _redSpotView;
         [SerializeField] private LevelObjectView _coinView;
         [SerializeField] private LevelObjectView _rocketView;
         [SerializeField] private LevelObjectView _batView;
@@ -20,27 +20,35 @@ namespace Platformer
 
         private void Awake()
         {
-            var camera = new CameraController(_playerView.Transform);
-            var paralaxController = new ParalaxController(camera, _environmentData.BackGroundConfig);
-
+            var player = new PlayerInitialization(new PlayerFactory(_charactersData.PlayerConfig));
+            var cameraController = new CameraController(player.Transform);
+            var paralaxController = new ParalaxController(cameraController, _environmentData.BackGroundConfig);
+            var inputInitialization = new InputInitialization();
+            
+            var cannon = new AimingCannon(_cannon, player.Transform);
+            
             var redSpotAnimator = new SpriteAnimator(_animationData.RedSpotAnimatorCnf);
-            var snailAnimator = new SpriteAnimator(_animationData.SnailAnimatorCnf);
             var coinAnimator = new SpriteAnimator(_animationData.CoinAnimatorCnf);
             var rocketAnimator = new SpriteAnimator(_animationData.RocketAnimatorCnf);
             var batAnimator = new SpriteAnimator(_animationData.BatEnemyAnimatorCnf);
             var evilBatAnimator = new SpriteAnimator(_animationData.EvilBatEnemyAnimatorCnf);
 
             _controllers = new Controllers();
+            _controllers.Add(cameraController);
+            _controllers.Add(paralaxController);
+            _controllers.Add(new InputController(inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
+            _controllers.Add(new PlayerStateController(player.Transform, player.SpriteRenderer, _charactersData.PlayerConfig, 
+                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
+  
+            _controllers.Add(cannon);
+            
             _controllers.Add(redSpotAnimator);
-            _controllers.Add(snailAnimator);
             _controllers.Add(coinAnimator);
             _controllers.Add(rocketAnimator);
             _controllers.Add(batAnimator);
             _controllers.Add(evilBatAnimator);
-            _controllers.Add(paralaxController);
-
-            redSpotAnimator.StartAnimation(_playerView.SpriteRenderer, _animState, true, _animationSpeed);
-            snailAnimator.StartAnimation(_snailView.SpriteRenderer, _animState, true, _animationSpeed);
+  
+            redSpotAnimator.StartAnimation(_redSpotView.SpriteRenderer, _animState, true, _animationSpeed);
             coinAnimator.StartAnimation(_coinView.SpriteRenderer, _animState, true, _animationSpeed);
             rocketAnimator.StartAnimation(_rocketView.SpriteRenderer, _animState, true, _animationSpeed);
             batAnimator.StartAnimation(_batView.SpriteRenderer, AnimState.Attack, true, _animationSpeed);
@@ -59,7 +67,7 @@ namespace Platformer
 
         private void FixedUpdate()
         {
-            _controllers.FixedExecute(Time.deltaTime);
+            _controllers.FixedExecute(Time.fixedDeltaTime);
         }
 
         private void OnDestroy()

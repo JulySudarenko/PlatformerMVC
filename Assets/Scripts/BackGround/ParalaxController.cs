@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static Platformer.NameManager;
 
 namespace Platformer
 {
@@ -14,20 +15,15 @@ namespace Platformer
             _camera = camera;
             _back = data;
             _managers = new ParalaxBackGround[data.Length];
-            _root = new GameObject("root");
+            _root = new GameObject(BACKGROUND_ROOT);
         }
 
         public void Initialize()
         {
             for (int i = 0; i < _back.Length; i++)
             {
-                var back = Object.Instantiate(_back[i].BackGround, _root.transform);
-
-                back = _back[i].IsPlaceChanging ? ChangePosition(back, _back[i].SizeCoefficient) : back;
-                back = _back[i].IsSizeChanging ? ChangeSize(back, _back[i].SizeCoefficient) : back;
-
-                var paralaxManager = new ParalaxBackGround(_camera, back.transform, _back[i]);
-                _managers[i] = paralaxManager;
+                 var backParalax = new BackGroundInitialisation(new BackGroundFactory(_back[i], _root.transform, _camera));
+                 _managers[i] = backParalax.GetParalaxBackGround();
             }
         }
 
@@ -37,34 +33,6 @@ namespace Platformer
             {
                 _managers[i].Execute();
             }
-        }
-
-        private GameObject ChangePosition(GameObject back, float delta)
-        {
-            foreach (Transform child in back.transform)
-            {
-                float randomSize = Random.Range(1.0f, delta);
-                child.transform.localScale = new Vector3(randomSize, randomSize, 1.0f);
-            }
-
-            return back;
-        }
-
-        private GameObject ChangeSize(GameObject back, float delta)
-        {
-            foreach (Transform child in back.transform)
-            {
-                child.transform.position = GetRandomVector(child.transform.position, delta);
-            }
-
-            return back;
-        }
-
-        private Vector3 GetRandomVector(Vector3 vector, float delta)
-        {
-            var newVector = new Vector3(vector.x + Random.Range(-1 * delta, delta),
-                vector.y + Random.Range(-1 * delta, delta), vector.z);
-            return newVector;
         }
     }
 }

@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a60b1801f5f43bb8209a4d597738e01, type: 3}
   m_Name: SnailCnf
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 4735427691726126, guid: 18d026e25cf494d47a4368183218e627,
+  PlayerPrefab: {fileID: 1987787265591218, guid: 18d026e25cf494d47a4368183218e627,
     type: 3}
+  _snailAnimeCnfPath: AnimSnailCnf
+  _startPointX: {x: -5, y: 0, z: 0}
+  _animationSpeed: 10

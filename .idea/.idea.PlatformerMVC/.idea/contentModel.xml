@@ -11,11 +11,22 @@
             <e p="SpriteAnimator.cs" t="Include" />
           </e>
           <e p="Assistants" t="Include">
+            <e p="AxisManager.cs" t="Include" />
             <e p="Extentions.cs" t="Include" />
+            <e p="NameManager.cs" t="Include" />
           </e>
           <e p="BackGround" t="Include">
+            <e p="BackGroundFactory.cs" t="Include" />
+            <e p="BackGroundInitialisation.cs" t="Include" />
+            <e p="IBackGroundFactory.cs" t="Include" />
             <e p="ParalaxBackGround.cs" t="Include" />
             <e p="ParalaxController.cs" t="Include" />
+          </e>
+          <e p="Cannon" t="Include">
+            <e p="AimingCannon.cs" t="Include" />
+            <e p="Bullet.cs" t="Include" />
+            <e p="BulletsEmitter.cs" t="Include" />
+            <e p="BulletView.cs" t="Include" />
           </e>
           <e p="Configs" t="Include">
             <e p="AnimationData.cs" t="Include" />
@@ -30,7 +41,11 @@
           <e p="Controllers" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
+            <e p="InputController.cs" t="Include" />
+            <e p="InputInitialization.cs" t="Include" />
             <e p="MainEntryPoint.cs" t="Include" />
+            <e p="PlayerInitialization.cs" t="Include" />
+            <e p="PlayerStateController.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="ICamera.cs" t="Include" />
@@ -41,6 +56,23 @@
             <e p="IInitialize.cs" t="Include" />
           </e>
           <e p="LevelObjectView.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="IPlayerFactory.cs" t="Include" />
+            <e p="PlayerAnimation.cs" t="Include" />
+            <e p="PlayerAttack.cs" t="Include" />
+            <e p="PlayerFactory.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerState.cs" t="Include" />
+          </e>
+          <e p="UserInput" t="Include">
+            <e p="IUserInputProxy.cs" t="Include" />
+            <e p="IUserPressButtonProxy.cs" t="Include" />
+            <e p="PCInputBlock.cs" t="Include" />
+            <e p="PCInputFireAttack.cs" t="Include" />
+            <e p="PCInputHorizontal.cs" t="Include" />
+            <e p="PCInputSwordAttack.cs" t="Include" />
+            <e p="PCInputVertical.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

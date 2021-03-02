@@ -20,12 +20,621 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8462b39a-2be9-4961-8092-46aeed32d545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Anime/AnimSnailCnf.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/Anime/AnimSnailCnf.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/SnailCnf.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/SnailCnf.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/CloudBigBack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/CloudBigBack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Snail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Snail.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/AnimationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/AnimationData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/CharactersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/CharactersData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/PlayerConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/PlayerConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Mid (2).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Mid (2).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Mid.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Mid.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Sky.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGrounds/myBack/Sky.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Asset 9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Autumn Bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Autumn Bush.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Autumn Tree.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Autumn Tree.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Bush.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_0000.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_0000.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Cloud_2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Flower-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Flower-1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Flower-2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Flower-2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Flower-3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Flower-3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Gras_0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Gras_0001.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Gras_0002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Gras_0002.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Ground_9Slice_0000.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Ground_9Slice_0000.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Mushroom_0000.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Mushroom_0000.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Tree.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Tree.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Winter Tree.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Winter Tree.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/banner_red1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/banner_red1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/bar_energy_slider_complete.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/bar_energy_slider_complete.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/bar_health6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/bar_health6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/chest_wooden_lv1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/chest_wooden_lv1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/chest_wooden_lv2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/chest_wooden_lv2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/chest_wooden_lv3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/chest_wooden_lv3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/chest_wooden_lv4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/chest_wooden_lv4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/flat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/flat.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/icon_banner4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/icon_banner4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/icon_magic_wand.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/icon_magic_wand.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/icon_saber.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/icon_saber.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/saphir_lv3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/saphir_lv3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/smooth.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/smooth.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death1/Version1_Death1_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Death2/Version1_Death2_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Hit/Version1_Hit_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Idle/Version1_Idle_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Walk/Version1_Walk_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Level 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Level 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/1-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/1-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/2-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/2-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/3-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/3-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/4-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/4-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/5-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/5-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/6-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/6-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/7-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/7-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/8-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/8-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/9-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-1/9-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-1-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-1-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-2-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-2-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-3-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-3-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-4-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-4-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-5-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-5-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-6-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-6-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-7-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-7-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-8-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-8-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-9-4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Chests/Model-2/model-2-9-4x.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/Coin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/Coin.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Coin Animation/image 9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack1/Version1_Attack1_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Attack2/Version1_Attack2_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death1/Version1_Death1_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Death2/Version1_Death2_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Hit/Version1_Hit_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Idle/Version1_Idle_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Run/Version1_Run_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_16.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_17.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_18.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_18.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_21.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_22.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_22.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_23.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_23.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Left/Walk/Version1_Walk_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Level 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/EvilBatEnemy/Level 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/RedSpot/Idle/RedSpotIdle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/RedSpot/Idle/RedSpotIdle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/RedSpot/Jump/RedSpotJump.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/RedSpot/Jump/RedSpotJump.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/RedSpot/Walk/RedSpotWalk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/RedSpot/Walk/RedSpotWalk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0000.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0000.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Rocket/Rocket_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0060.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0060.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0070.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0070.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0080.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0080.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0090.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0090.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0100.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0100.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0110.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0110.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0120.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0120.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0130.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0130.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0140.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0140.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0150.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0150.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0160.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/DEATH/DEATH_Snail_0160.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0060.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0060.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0070.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0070.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0080.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0080.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0090.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0090.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0100.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0100.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0110.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0110.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0120.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0120.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0130.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0130.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0140.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0140.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0150.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIDE/HIDE_Snail_0150.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0060.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0060.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0070.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0070.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0080.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0080.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0090.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0090.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0100.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0100.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0110.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0110.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0120.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0120.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0130.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0130.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0140.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0140.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0150.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0150.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0160.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/HIT/HIT_Snail_0160.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0000.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0000.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0060.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0060.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0070.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0070.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0080.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/IDLE/IDLE_Snail_0080.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0060.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0060.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0070.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0070.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0080.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0080.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0090.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0090.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0100.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0100.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0110.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0110.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0120.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0120.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0130.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0130.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0140.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0140.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0150.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0150.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0160.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/JUMP/JUMP_Snail_0160.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0060.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0060.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0070.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0070.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0080.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0080.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0090.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0090.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0100.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0100.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0110.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0110.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0120.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0120.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0130.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0130.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0140.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0140.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0150.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0150.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0160.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/LOOK/LOOK_Snail_0160.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0000.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0000.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0060.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0060.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0070.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0070.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0080.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/MOVE/MOVE_Snail_0080.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0060.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0060.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0070.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0070.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0080.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0080.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0090.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0090.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0100.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0100.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0110.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0110.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0120.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0120.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0130.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0130.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0140.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0140.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0150.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0150.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0160.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/SPEED/SPEED_Snail_0160.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0010.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0010.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0020.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0020.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0030.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0030.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0040.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0040.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0050.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0050.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0060.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0060.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0070.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0070.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0080.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0080.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0090.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0090.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0100.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0100.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0110.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0110.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0120.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0120.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0130.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0130.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0140.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0140.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0150.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0150.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0160.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0160.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0170.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0170.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0180.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/Snail/VICTORY/VICTORY_Snail_0180.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/Grass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/Grass.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassCliffLeft.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassCliffLeft.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassCliffMid.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassCliffMid.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassCliffRight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassCliffRight.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassColumn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassColumn.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillLeft.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillLeft.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillLeft2 DownShadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillLeft2 DownShadow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillLeft2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillLeft2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillRight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillRight.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillRight2 DownShadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillRight2 DownShadow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillRight2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassHillRight2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillLeft&amp;Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillLeft&amp;Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillLeft.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillLeft.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillLeft2 DownShadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillLeft2 DownShadow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillLeft2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillLeft2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight2 DownShadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight2 DownShadow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight2&amp;Left2 DownShadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight2&amp;Left2 DownShadow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight2&amp;Left2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight2&amp;Left2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassJoinHillRight2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassLeft.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassLeft.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassMid.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassMid.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassRight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/GrassRight.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +644,53 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Downloads/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ParalaxController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/BackGroundConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/SpriteAnimator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/PCInputVertical.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/AxisManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/InputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/InputInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/PCInputHorizontal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/IUserInputProxy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assistants/AxisManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/AnimationData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerAttackController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerMoveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/CharactersData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/PlayerConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerStateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/PCInputBlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/PCInputFireAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/PCInputSwordAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BulletsEmitter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/BulletView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/BulletsEmitter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet.cs" />
       </list>
     </option>
   </component>
@@ -68,10 +710,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14924">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="14924" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -109,77 +751,85 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="471" height="464" key="DebuggerActiveHint" timestamp="1614256607078">
+    <state width="497" height="464" key="DebuggerActiveHint" timestamp="1614503727237">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="471" height="464" key="DebuggerActiveHint/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614256607078" />
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1614265379712">
+    <state width="497" height="464" key="DebuggerActiveHint/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614503727237" />
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1614265379711">
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379711" />
-    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1614265379711">
+    <state width="1493" height="279" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379711" />
-    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1614265379711">
+    <state width="1493" height="279" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379711" />
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.1.center" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.1.center" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.1.left" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.1.left" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.1.right" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.1.right" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.2.bottom" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.2.bottom" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.2.center" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.2.center" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.2.left" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.2.left" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.2.right" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.2.right" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.3.bottom" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.3.bottom" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.3.center" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.3.center" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.3.left" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.3.left" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state width="1493" height="279" key="GridCell.Tab.3.right" timestamp="1614265379712">
+    <state width="1493" height="279" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state width="1493" height="279" key="GridCell.Tab.3.right" timestamp="1614716680150">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614265379712" />
-    <state x="2521" y="-40" key="RiderGenerateDialog" timestamp="1614234989799">
+    <state width="1493" height="279" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614716680150" />
+    <state x="2521" y="-40" key="RiderGenerateDialog" timestamp="1614445811235">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state x="2521" y="-40" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614234989799" />
+    <state x="2521" y="-40" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614445811235" />
+    <state x="2345" y="110" key="run.anything.popup" timestamp="1614436149194">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state x="2345" y="110" key="run.anything.popup/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614436149194" />
+    <state x="2351" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1614679068834">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state x="2351" y="-1" width="672" height="678" key="search.everywhere.popup/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614679068834" />
   </component>
 </project>

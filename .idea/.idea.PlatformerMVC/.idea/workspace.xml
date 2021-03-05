@@ -20,29 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8462b39a-2be9-4961-8092-46aeed32d545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/AimingCannonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/EnvironmentData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/EnvironmentData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Bat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Bat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/EvilBat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/EvilBat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Traps/CoreMace.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Traps/CoreMace.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assistants/NameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assistants/NameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/AimingCannon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/AimingCannon.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/AimingCannonController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/BulletView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/BulletView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/BulletsEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/BulletsEmitter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/CannonConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/CannonConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Bush.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tasks List.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks List.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +74,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/AimingCannon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/AimingCannonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/BulletsEmitter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/ItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assistants/NameManager.cs" />
@@ -102,14 +84,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Assistants/Extentions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assistants/BuildAssistant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/CannonConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CannonView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CorePool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/CannonConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" />
       </list>
     </option>
   </component>
@@ -170,78 +153,82 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="549" height="464" key="DebuggerActiveHint" timestamp="1614930469001">
+    <state width="549" height="464" key="DebuggerActiveHint" timestamp="1614948879304">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="549" height="464" key="DebuggerActiveHint/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614930469001" />
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1614930426075">
+    <state width="549" height="464" key="DebuggerActiveHint/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948879304" />
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1614948735434">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614930426075" />
-    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1614930426075">
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735434" />
+    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1614948735434">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614930426075" />
-    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1614930426075">
+    <state width="1493" height="279" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735434" />
+    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1614948735434">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614930426075" />
-    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1614930426075">
+    <state width="1493" height="279" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735434" />
+    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1614948735434">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614930426075" />
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1614930432682">
+    <state width="1493" height="279" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735434" />
+    <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1614948741631">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614930432682" />
-    <state width="1493" height="279" key="GridCell.Tab.1.center" timestamp="1614930432682">
+    <state width="1493" height="279" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948741631" />
+    <state width="1493" height="279" key="GridCell.Tab.1.center" timestamp="1614948741631">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614930432682" />
-    <state width="1493" height="279" key="GridCell.Tab.1.left" timestamp="1614930432682">
+    <state width="1493" height="279" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948741631" />
+    <state width="1493" height="279" key="GridCell.Tab.1.left" timestamp="1614948741631">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614930432682" />
-    <state width="1493" height="279" key="GridCell.Tab.1.right" timestamp="1614930432682">
+    <state width="1493" height="279" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948741631" />
+    <state width="1493" height="279" key="GridCell.Tab.1.right" timestamp="1614948741631">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614930432682" />
-    <state width="1493" height="279" key="GridCell.Tab.2.bottom" timestamp="1614889150945">
+    <state width="1493" height="279" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948741631" />
+    <state width="1493" height="279" key="GridCell.Tab.2.bottom" timestamp="1614948735269">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614889150945" />
-    <state width="1493" height="279" key="GridCell.Tab.2.center" timestamp="1614889150945">
+    <state width="1493" height="279" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735269" />
+    <state width="1493" height="279" key="GridCell.Tab.2.center" timestamp="1614948735269">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614889150945" />
-    <state width="1493" height="279" key="GridCell.Tab.2.left" timestamp="1614889150945">
+    <state width="1493" height="279" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735269" />
+    <state width="1493" height="279" key="GridCell.Tab.2.left" timestamp="1614948735269">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614889150945" />
-    <state width="1493" height="279" key="GridCell.Tab.2.right" timestamp="1614889150945">
+    <state width="1493" height="279" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735269" />
+    <state width="1493" height="279" key="GridCell.Tab.2.right" timestamp="1614948735269">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614889150945" />
-    <state width="1493" height="279" key="GridCell.Tab.3.bottom" timestamp="1614889150945">
+    <state width="1493" height="279" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735269" />
+    <state width="1493" height="279" key="GridCell.Tab.3.bottom" timestamp="1614948735269">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614889150945" />
-    <state width="1493" height="279" key="GridCell.Tab.3.center" timestamp="1614889150945">
+    <state width="1493" height="279" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735269" />
+    <state width="1493" height="279" key="GridCell.Tab.3.center" timestamp="1614948735269">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614889150945" />
-    <state width="1493" height="279" key="GridCell.Tab.3.left" timestamp="1614889150945">
+    <state width="1493" height="279" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735269" />
+    <state width="1493" height="279" key="GridCell.Tab.3.left" timestamp="1614948735269">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614889150945" />
-    <state width="1493" height="279" key="GridCell.Tab.3.right" timestamp="1614889150945">
+    <state width="1493" height="279" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735269" />
+    <state width="1493" height="279" key="GridCell.Tab.3.right" timestamp="1614948735269">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614889150945" />
+    <state width="1493" height="279" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948735269" />
     <state x="2521" y="-40" key="RiderGenerateDialog" timestamp="1614445811235">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state x="2521" y="-40" key="RiderGenerateDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614445811235" />
+    <state x="2013" y="-61" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1614948336054">
+      <screen x="1920" y="-154" width="1536" height="832" />
+    </state>
+    <state x="2013" y="-61" width="1350" height="638" key="VCS.FileHistoryDialog/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614948336054" />
     <state x="2345" y="110" key="run.anything.popup" timestamp="1614436149194">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
@@ -255,30 +242,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs</url>
-          <line>44</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\PlatformerMVC\Assets\Scripts\Cannon\CoresEmitterController.cs" initialLine="44">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs</url>
+          <line>19</line>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\PlatformerMVC\Assets\Scripts\Cannon\CoreController.cs" initialLine="20">
             <startOffsets>
-              <option value="1345" />
+              <option value="558" />
             </startOffsets>
             <endOffsets>
-              <option value="1377" />
+              <option value="571" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Cannon/CorePool.cs</url>
-          <line>35</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\PlatformerMVC\Assets\Scripts\Cannon\CorePool.cs" initialLine="35">
-            <startOffsets>
-              <option value="1153" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1190" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -14,8 +14,6 @@ namespace Platformer
         public CoreInitialization(ICoreFactory coreFactory)
         {
             _coreFactory = coreFactory;
-            // _core = _coreFactory.CreateCore();
-            // Transform = _core.transform;
         }
         
         public GameObject CreateCore()

@@ -24,7 +24,7 @@ namespace Platformer
             var inputInitialization = new InputInitialization();
 
             var cannon = new AimingCannonController(_cannon.TurretTransform, player.Transform);
-            var coreEmitter = new CoresEmitterController(player.Transform, _cannon.EmitterTransform,
+            var coreEmitter = new CoresEmitterController(player.Transform, _cannon.EmitterTransform, _cannon.TurretTransform,
                 _environmentData.CannonConfig);
 
             var coinAnimator = new SpriteAnimator(_animationData.CoinAnimatorCnf);

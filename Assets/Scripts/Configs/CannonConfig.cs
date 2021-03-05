@@ -7,6 +7,7 @@ namespace Platformer
     {
         public GameObject CannonPrefab;
         public GameObject CorePrefab;
+        public LayerMask Mask;
 
         [SerializeField, Range(1, 5000)] private float _coreForce;
         [SerializeField, Range(1, 100)] private float _corePower;

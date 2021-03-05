@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 890489335130036651}
   - component: {fileID: 890489335130036650}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Mace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 55734044366491642}
   - component: {fileID: 7791061358925117705}
   - component: {fileID: -6956090290617866675}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CoreMace
   m_TagString: Untagged
   m_Icon: {fileID: 0}

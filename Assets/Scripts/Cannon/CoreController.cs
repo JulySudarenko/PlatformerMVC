@@ -9,7 +9,7 @@ namespace Platformer
         private CannonConfig _config;
 
         private readonly float _radius = 0.08f;
-        private readonly float _groundLevel = 0.3f;
+        private readonly float _groundLevel = 0.5f;
         private readonly float _gravityForce = -10f;
         private Vector3 _velocity;
         private bool _isStartPosition;
@@ -28,16 +28,16 @@ namespace Platformer
         {
             //_core.position -= _shootDirection.up * _config.Force * deltaTime; - работает
 
-            // if (IsGrounded())
-            // {
-            //     SetVelocity(_velocity.Change(y: -_velocity.y));
-            //     //_core.position = _core.position.Change(y: _groundLevel + _radius);
-            // }
-            // else
-            // {
-                //SetVelocity(_velocity + Vector3.up * (_gravityForce * Time.deltaTime));
+            if (IsGrounded())
+             {
+                 SetVelocity(_velocity.Change(y: -_velocity.y));
+                 _core.position = _core.position.Change(y: _core.position.y + _groundLevel);
+             }
+             else
+             {
+                SetVelocity(_velocity + Vector3.up * (_gravityForce * Time.deltaTime));
                 _core.position += _velocity * Time.deltaTime;
-            //}
+            }
         }
 
         public void Active(bool value)

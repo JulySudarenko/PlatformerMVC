@@ -22,10 +22,6 @@
     <list default="true" id="8462b39a-2be9-4961-8092-46aeed32d545" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/CannonConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/CannonConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +87,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/CannonConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" />
       </list>
     </option>
   </component>

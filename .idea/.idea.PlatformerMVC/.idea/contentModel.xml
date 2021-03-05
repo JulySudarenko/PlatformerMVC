@@ -12,6 +12,7 @@
           </e>
           <e p="Assistants" t="Include">
             <e p="AxisManager.cs" t="Include" />
+            <e p="BuildAssistant.cs" t="Include" />
             <e p="Extentions.cs" t="Include" />
             <e p="NameManager.cs" t="Include" />
           </e>
@@ -23,14 +24,20 @@
             <e p="ParalaxController.cs" t="Include" />
           </e>
           <e p="Cannon" t="Include">
-            <e p="AimingCannon.cs" t="Include" />
-            <e p="Bullet.cs" t="Include" />
-            <e p="BulletsEmitter.cs" t="Include" />
-            <e p="BulletView.cs" t="Include" />
+            <e p="AimingCannonController.cs" t="Include" />
+            <e p="CannonView.cs" t="Include" />
+            <e p="CoreController.cs" t="Include" />
+            <e p="CoreFactory.cs" t="Include" />
+            <e p="CoreInitialization.cs" t="Include" />
+            <e p="CorePool.cs" t="Include" />
+            <e p="CoresEmitterController.cs" t="Include" />
+            <e p="CoreView.cs" t="Include" />
+            <e p="ICoreFactory.cs" t="Include" />
           </e>
           <e p="Configs" t="Include">
             <e p="AnimationData.cs" t="Include" />
             <e p="BackGroundConfig.cs" t="Include" />
+            <e p="CannonConfig.cs" t="Include" />
             <e p="CharactersData.cs" t="Include" />
             <e p="EnemyConfig.cs" t="Include" />
             <e p="EnvironmentData.cs" t="Include" />
@@ -63,6 +70,12 @@
             <e p="PlayerFactory.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerState.cs" t="Include" />
+          </e>
+          <e p="TimeRemaining" t="Include">
+            <e p="ITimeRemaining.cs" t="Include" />
+            <e p="TimeRemaining.cs" t="Include" />
+            <e p="TimeRemainingController.cs" t="Include" />
+            <e p="TimeRemainingExtensions.cs" t="Include" />
           </e>
           <e p="UserInput" t="Include">
             <e p="IUserInputProxy.cs" t="Include" />

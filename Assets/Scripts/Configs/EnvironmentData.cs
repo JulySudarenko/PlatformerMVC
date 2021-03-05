@@ -8,10 +8,12 @@ namespace Platformer
         [SerializeField] private string _coinCnfPath;
         [SerializeField] private string _rocketCnfPath;
         [SerializeField] private string _backgroundCnfPath;
+        [SerializeField] private string _cannonCnfPath;
 
         private ItemConfig _coinCnf;
         private ItemConfig _rocketCnf;
         private BackGroundConfig[] _backgroundCnf;
+        private CannonConfig _cannonConfig;
 
         public ItemConfig CoinCnf
         {
@@ -36,6 +38,19 @@ namespace Platformer
                 }
 
                 return _rocketCnf;
+            }
+        }
+        
+        public CannonConfig CannonConfig
+        {
+            get
+            {
+                if (_cannonConfig == null)
+                {
+                    _cannonConfig = Extentions.Load<CannonConfig>("Items/" + _cannonCnfPath);
+                }
+
+                return _cannonConfig;
             }
         }
 

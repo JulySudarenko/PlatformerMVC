@@ -15,3 +15,4 @@ MonoBehaviour:
   _coinCnfPath: CoinCnf
   _rocketCnfPath: RocketCnf
   _backgroundCnfPath: BackGround
+  _cannonCnfPath: CannonConfig

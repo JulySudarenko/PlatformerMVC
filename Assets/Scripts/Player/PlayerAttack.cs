@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Platformer
 {
-    internal class PlayerAttack : IFixedExecute, ICleanup
+    internal class PlayerAttack
     {
         public Action<PlayerState> OnAttackStateChange;
         private Transform _player;

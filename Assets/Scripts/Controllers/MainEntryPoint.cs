@@ -24,7 +24,7 @@ namespace Platformer
             var inputInitialization = new InputInitialization();
 
             var cannon = new AimingCannonController(_cannon.TurretTransform, player.Transform);
-            var coreEmitter = new CoresEmitterController(player.Transform, _cannon.EmitterTransform, _cannon.TurretTransform,
+            var coreEmitter = new CoresEmitterController(_cannon.EmitterTransform, _cannon.TurretTransform,
                 _environmentData.CannonConfig);
 
             var coinAnimator = new SpriteAnimator(_animationData.CoinAnimatorCnf);
@@ -34,16 +34,13 @@ namespace Platformer
             _controllers = new Controllers();
             _controllers.Add(cameraController);
             _controllers.Add(paralaxController);
-            _controllers.Add(new InputController(inputInitialization.GetMoveInput(),
-                inputInitialization.GetAttackInput()));
+            _controllers.Add(new InputController(inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
             _controllers.Add(new PlayerStateController(player.Transform, player.SpriteRenderer,
-                _charactersData.PlayerConfig,
-                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
+                _charactersData.PlayerConfig, inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
             _controllers.Add(new TimeRemainingController());
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);
-
-
+          
             _controllers.Add(coinAnimator);
             _controllers.Add(batAnimator);
             _controllers.Add(evilBatAnimator);

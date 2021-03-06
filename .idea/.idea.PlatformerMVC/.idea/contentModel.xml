@@ -31,7 +31,6 @@
             <e p="CoreInitialization.cs" t="Include" />
             <e p="CorePool.cs" t="Include" />
             <e p="CoresEmitterController.cs" t="Include" />
-            <e p="CoreView.cs" t="Include" />
             <e p="ICoreFactory.cs" t="Include" />
           </e>
           <e p="Configs" t="Include">

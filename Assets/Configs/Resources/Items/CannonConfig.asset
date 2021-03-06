@@ -16,6 +16,9 @@ MonoBehaviour:
     type: 3}
   CorePrefab: {fileID: 4576116917595992091, guid: d8e291b4571121b4e9912c8520c5f64d,
     type: 3}
-  _coreForce: 5
+  Mask:
+    serializedVersion: 2
+    m_Bits: 256
+  _coreForce: 9
   _corePower: 0
   _corePoolSize: 10

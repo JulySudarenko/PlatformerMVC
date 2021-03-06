@@ -9,23 +9,39 @@ namespace Platformer
     public sealed class CorePool
     {
         private Action _reloadingBullet;
-        private readonly CoreInitialization _coreInitialization;
         private readonly List<Transform> _cores;
+        private readonly List<CoreController> _coreControllers;
+        private readonly CoreInitialization _coreInitialization;
+        private readonly CannonConfig _config;
         private readonly Transform _rootPool;
         private readonly int _capacityPool;
 
-        public CorePool(CoreFactory coreFactory, int capacityPool)
+        public CorePool(CoreFactory coreFactory, CannonConfig config)
         {
             _coreInitialization = new CoreInitialization(coreFactory);
-            _capacityPool = capacityPool;
+            _config = config;
+            _capacityPool = _config.PoolSize;
             _cores = new List<Transform>();
+            _coreControllers = new List<CoreController>();
             if (!_rootPool)
             {
                 _rootPool = new GameObject(NameManager.CANNON_CORE_ROOT).transform;
             }
         }
 
-        public Transform GetCore()
+        public CoreController GetControlledCore()
+        {
+            var controlledCore = _coreControllers.FirstOrDefault(a => !a.IsActive);
+            if (controlledCore == null)
+            {
+                controlledCore = new CoreController(GetCore(), _config);
+                _coreControllers.Add(controlledCore);
+            }
+
+            return controlledCore;
+        }
+
+        private Transform GetCore()
         {
             var core = _cores.FirstOrDefault(a => !a.gameObject.activeSelf);
             if (core == null)
@@ -57,6 +73,4 @@ namespace Platformer
             Object.Destroy(_rootPool.gameObject);
         }
     }
-
-
 }

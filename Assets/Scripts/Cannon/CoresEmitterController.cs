@@ -5,33 +5,25 @@ namespace Platformer
 {
     public class CoresEmitterController : IInitialize, IExecute
     {
-        private CorePool _corePool;
+        private readonly List<CoreController> _coreControllers;
         private ITimeRemaining _timeRemaining;
-        private Transform _target;
-        private Transform _barrel;
-        private Transform _turret;
-        private CannonConfig _config;
-        private CoreController _coreController;
-        private List<CoreController> _coreControllers;
+        private readonly CorePool _corePool;
+        private readonly Transform _barrel;
+        private readonly Transform _turret;
+        private readonly CannonConfig _config;
 
-        private const float _delay = 2.0f;
-
-        // private int _currentIndex;
-        private float _timeTillNext;
-
-        public CoresEmitterController(Transform target, Transform barrel, Transform turret, CannonConfig config)
+        public CoresEmitterController(Transform barrel, Transform turret, CannonConfig config)
         {
-            _target = target;
             _barrel = barrel;
             _config = config;
             _turret = turret;
-            _corePool = new CorePool(new CoreFactory(_config), _config.PoolSize);
+            _corePool = new CorePool(new CoreFactory(_config), _config);
             _coreControllers = new List<CoreController>();
         }
 
         public void Initialize()
         {
-            _timeRemaining = new TimeRemaining(Shoot, _delay, true);
+            _timeRemaining = new TimeRemaining(Shoot, _config.SpawnCoreTime, true);
             _timeRemaining.AddTimeRemaining();
         }
 
@@ -45,10 +37,7 @@ namespace Platformer
 
         private void Shoot()
         {
-            var core = _corePool.GetCore();
-            //core.gameObject.AddTransform(_barrel);
-            core.gameObject.SetActive(true);
-            var coreController = new CoreController(core, _turret, _config);
+            var coreController = _corePool.GetControlledCore();
             _coreControllers.Add(coreController);
             coreController.Throw(_barrel.position, -_turret.up * _config.Force);
         }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Platformer
@@ -37,9 +38,13 @@ namespace Platformer
 
         private void Shoot()
         {
-            var coreController = _corePool.GetControlledCore();
-            _coreControllers.Add(coreController);
-            coreController.Throw(_barrel.position, -_turret.up * _config.Force);
+            var controlledCore = _coreControllers.FirstOrDefault(a => !a.IsActive);
+            if (controlledCore == null)
+            {
+                controlledCore = new CoreController(_corePool.GetCore(), _config);
+                _coreControllers.Add(controlledCore);
+            }
+            controlledCore.Throw(_barrel.position, -_turret.up * _config.Force);
         }
     }
 }

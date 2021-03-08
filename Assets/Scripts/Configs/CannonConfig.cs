@@ -18,6 +18,7 @@ namespace Platformer
         [SerializeField, Range(1, 10)] private float _spawnCoreTime = 2.0f;
         [SerializeField, Range(1, 20)] private float _lifeCoreTime = 5.0f;
         [SerializeField, Range(1, 50)] private int _corePoolSize = 5;
+        
 
         public float Force => _coreForce;
         public float Power => _corePower;

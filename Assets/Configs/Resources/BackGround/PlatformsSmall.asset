@@ -19,3 +19,4 @@ MonoBehaviour:
   _speedCoefficient: 0
   _isPlaceChanging: 0
   _isSizeChanging: 0
+  _isCoinPlace: 1

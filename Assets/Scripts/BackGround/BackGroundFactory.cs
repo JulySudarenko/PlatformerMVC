@@ -21,7 +21,7 @@ namespace Platformer
 
             back = _config.IsPlaceChanging ? ChangePosition(back, _config.SizeCoefficient) : 
                    _config.IsSizeChanging ? ChangeSize(back, _config.SizeCoefficient) : back;
-
+            
             return new ParalaxBackGround(_camera, back.transform, _config);
         }
 

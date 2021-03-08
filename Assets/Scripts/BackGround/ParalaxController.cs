@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using static Platformer.NameManager;
 
 namespace Platformer
@@ -8,6 +9,7 @@ namespace Platformer
         private ICamera _camera;
         private BackGroundConfig[] _back;
         private ParalaxBackGround[] _managers;
+        private List<Transform> _coinsPlaces { get; }
         private GameObject _root;
 
         public ParalaxController(ICamera camera, BackGroundConfig[] data)

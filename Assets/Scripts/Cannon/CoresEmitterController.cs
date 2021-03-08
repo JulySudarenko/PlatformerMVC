@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Platformer
 {
-    public class CoresEmitterController : IInitialize, IExecute
+    public class CoresEmitterController : IInitialize
     {
         private readonly List<CoreController> _coreControllers;
         private ITimeRemaining _timeRemaining;
@@ -26,14 +26,6 @@ namespace Platformer
         {
             _timeRemaining = new TimeRemaining(Shoot, _config.SpawnCoreTime, true);
             _timeRemaining.AddTimeRemaining();
-        }
-
-        public void Execute(float deltaTime)
-        {
-            foreach (var coreController in _coreControllers)
-            {
-                coreController.Execuite(deltaTime);
-            }
         }
 
         private void Shoot()

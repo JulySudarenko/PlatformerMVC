@@ -21,7 +21,7 @@ MonoBehaviour:
   Mask:
     serializedVersion: 2
     m_Bits: 256
-  _coreForce: 9
+  _coreForce: 10
   _corePower: 0
   _groundLevel: 0.2
   _gravityForce: -5

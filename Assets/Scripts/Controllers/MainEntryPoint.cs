@@ -10,11 +10,6 @@ namespace Platformer
         private Controllers _controllers;
 
         [SerializeField] private CannonView _cannon;
-        [SerializeField] private LevelObjectView _coinView;
-        [SerializeField] private LevelObjectView _batView;
-        [SerializeField] private LevelObjectView _evilBatView;
-        [SerializeField] private int _animationSpeed = 10;
-        [SerializeField] private AnimState _animState;
 
         private void Awake()
         {
@@ -27,27 +22,15 @@ namespace Platformer
             var coreEmitter = new CoresEmitterController(_cannon.EmitterTransform, _cannon.TurretTransform,
                 _environmentData.CannonConfig);
 
-            var coinAnimator = new SpriteAnimator(_animationData.CoinAnimatorCnf);
-            var batAnimator = new SpriteAnimator(_animationData.BatEnemyAnimatorCnf);
-            var evilBatAnimator = new SpriteAnimator(_animationData.EvilBatEnemyAnimatorCnf);
-
             _controllers = new Controllers();
             _controllers.Add(cameraController);
             _controllers.Add(paralaxController);
             _controllers.Add(new InputController(inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
-            _controllers.Add(new PlayerStateController(player.Transform, player.SpriteRenderer,
-                _charactersData.PlayerConfig, inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
+            _controllers.Add(new PlayerStateController(player, _charactersData.PlayerConfig, 
+                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
             _controllers.Add(new TimeRemainingController());
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);
-          
-            _controllers.Add(coinAnimator);
-            _controllers.Add(batAnimator);
-            _controllers.Add(evilBatAnimator);
-
-            coinAnimator.StartAnimation(_coinView.SpriteRenderer, _animState, true, _animationSpeed);
-            batAnimator.StartAnimation(_batView.SpriteRenderer, AnimState.Attack, true, _animationSpeed);
-            evilBatAnimator.StartAnimation(_evilBatView.SpriteRenderer, AnimState.Attack, true, _animationSpeed);
         }
 
         private void Start()

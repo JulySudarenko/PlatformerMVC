@@ -14,7 +14,7 @@ namespace Platformer
         public GameObject Create()
         {
             var player = Object.Instantiate(_config.PlayerPrefab);
-            player.transform.position = player.transform.position.Change(x: -5f);
+            player.transform.position = player.transform.position.Change(x: _config.StartPointX);
             return player;
         }
     }

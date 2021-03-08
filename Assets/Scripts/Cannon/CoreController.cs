@@ -50,7 +50,7 @@ namespace Platformer
             _core.position = position;
             SetVelocity(velocity);
             Active(true);
-            _timeRemaining = new TimeRemaining(ReturnToPool, _config.SpawnCoreTime * 3.5f, false);
+            _timeRemaining = new TimeRemaining(ReturnToPool, _config.LifeCoreTime, false);
             _timeRemaining.AddTimeRemaining();
         }
         

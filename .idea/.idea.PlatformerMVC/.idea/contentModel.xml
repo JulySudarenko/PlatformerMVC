@@ -33,6 +33,11 @@
             <e p="CoresEmitterController.cs" t="Include" />
             <e p="ICoreFactory.cs" t="Include" />
           </e>
+          <e p="Coins" t="Include">
+            <e p="CoinsFactory.cs" t="Include" />
+            <e p="CoinsInitialization.cs" t="Include" />
+            <e p="ICoinsFactory.cs" t="Include" />
+          </e>
           <e p="Configs" t="Include">
             <e p="AnimationData.cs" t="Include" />
             <e p="BackGroundConfig.cs" t="Include" />
@@ -43,6 +48,10 @@
             <e p="ItemConfig.cs" t="Include" />
             <e p="PlayerConfig.cs" t="Include" />
             <e p="SpriteAnimatorConfig.cs" t="Include" />
+          </e>
+          <e p="ContactProcessing" t="Include">
+            <e p="ContactPoller.cs" t="Include" />
+            <e p="TriggerContacts.cs" t="Include" />
           </e>
           <e p="Controllers" t="Include">
             <e p="CameraController.cs" t="Include" />

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b4f7e9239f4ec3882d6d020aaba277, type: 3}
   m_Name: CannonConfig
   m_EditorClassIdentifier: 
-  CannonPrefab: {fileID: 5059280716803377448, guid: a3a8e08a09cdc4848bdc79dae65a112c,
+  CannonPrefab: {fileID: 6057627600180474531, guid: ddc399b8be447ce48bb7a16ed7b97aa6,
     type: 3}
+  Turret: {fileID: 5083958816892978537, guid: 430216e244bbc2645abf81bc6eaae1ad, type: 3}
+  Barrel: {fileID: 0}
   CorePrefab: {fileID: 4576116917595992091, guid: d8e291b4571121b4e9912c8520c5f64d,
     type: 3}
   Mask:
@@ -21,4 +23,8 @@ MonoBehaviour:
     m_Bits: 256
   _coreForce: 9
   _corePower: 0
+  _groundLevel: 0.2
+  _gravityForce: -5
+  _spawnCoreTime: 2
+  _lifeCoreTime: 5
   _corePoolSize: 10

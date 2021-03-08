@@ -14,14 +14,14 @@ namespace Platformer
         private PlayerState _attackState;
         private bool _isNewAttackState;
 
-        public PlayerStateController(Transform player, SpriteRenderer sprite, PlayerConfig config,
+        public PlayerStateController(PlayerInitialization player, PlayerConfig config,
             (IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) moveInput,
             (IUserPressButtonProxy inputSwordAttack, IUserPressButtonProxy inputFireAttack,
                 IUserPressButtonProxy inputBlock) attackInput)
         {
-            _playerAnimation = new PlayerAnimation(sprite, config);
+            _playerAnimation = new PlayerAnimation(player.SpriteRenderer, config);
             _playerMovement = new PlayerMovement(player, config, moveInput);
-            _playerAttack = new PlayerAttack(player, config, attackInput);
+            _playerAttack = new PlayerAttack(player.Transform, config, attackInput);
             _state = PlayerState.Stay;
             _onPlayerStateChange += _playerAnimation.OnChangeState;
             _playerMovement.OnMoveStateChange += ChangeMoveState;
@@ -49,17 +49,8 @@ namespace Platformer
 
         private void ChangeState()
         {
-            if (_isNewAttackState)
-            {
-                _state = _attackState;
-                _onPlayerStateChange?.Invoke(_state);
-            }
-            else
-            {
-                _state = _moveState;
-                _onPlayerStateChange?.Invoke(_state);
-            }
-
+            _state = _isNewAttackState ? _attackState : _moveState;
+            _onPlayerStateChange?.Invoke(_state);
             _isNewAttackState = false;
         }
 

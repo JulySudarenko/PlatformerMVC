@@ -139,7 +139,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4576116917595992091}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -222,8 +222,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.93725497, g: 0.32941177, b: 0.30980393, a: 1}
-      key1: {r: 0.8977551, g: 0.71022975, b: 0.09701232, a: 1}
+      key0: {r: 0.93725497, g: 0.32941177, b: 0.30980393, a: 0.84313726}
+      key1: {r: 0.8977551, g: 0.71022975, b: 0.09701232, a: 0.25882354}
       key2: {r: 0.93725497, g: 0.32941177, b: 0.30980393, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -232,7 +232,7 @@ TrailRenderer:
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
       ctime1: 2120
-      ctime2: 15613
+      ctime2: 6554
       ctime3: 0
       ctime4: 0
       ctime5: 0
@@ -250,7 +250,7 @@ TrailRenderer:
       m_NumColorKeys: 3
       m_NumAlphaKeys: 2
     numCornerVertices: 30
-    numCapVertices: 5
+    numCapVertices: 10
     alignment: 0
     textureMode: 0
     shadowBias: 0.5

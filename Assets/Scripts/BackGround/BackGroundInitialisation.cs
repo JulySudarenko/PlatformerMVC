@@ -2,7 +2,7 @@
 {
     internal class BackGroundInitialisation
     {
-        private IBackGroundFactory _factory;
+        private readonly IBackGroundFactory _factory;
 
         public BackGroundInitialisation(IBackGroundFactory factory)
         {

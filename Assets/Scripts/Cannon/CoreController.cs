@@ -4,11 +4,11 @@ namespace Platformer
 {
     public class CoreController
     {
-        private ITimeRemaining _timeRemaining;
         private readonly Transform _core;
         private readonly TrailRenderer _trail;
         private readonly Rigidbody2D _rigidbody;
         private readonly CannonConfig _config;
+        private ITimeRemaining _timeRemaining;
         private Vector3 _axis;
         private Vector3 _velocity;
         private float _angle;

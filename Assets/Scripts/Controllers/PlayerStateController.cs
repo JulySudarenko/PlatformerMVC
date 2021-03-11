@@ -1,9 +1,8 @@
 ﻿using System;
-using UnityEngine;
 
 namespace Platformer
 {
-    internal class PlayerStateController : IFixedExecute, ICleanup
+    internal class PlayerStateController : IFixedExecute, ICleanup, IWinState
     {
         private Action<PlayerState> _onPlayerStateChange;
         private readonly PlayerAnimation _playerAnimation;
@@ -52,6 +51,12 @@ namespace Platformer
             _state = _isNewAttackState ? _attackState : _moveState;
             _onPlayerStateChange?.Invoke(_state);
             _isNewAttackState = false;
+        }
+
+        public void IsWinState()
+        {
+            _state = PlayerState.Win;
+            _onPlayerStateChange?.Invoke(_state);
         }
 
         public void Cleanup()

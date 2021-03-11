@@ -4,12 +4,12 @@ namespace Platformer
 {
     public class MainEntryPoint : MonoBehaviour
     {
-        [SerializeField] private AnimationData _animationData;
         [SerializeField] private CharactersData _charactersData;
         [SerializeField] private EnvironmentData _environmentData;
         private Controllers _controllers;
 
         [SerializeField] private CannonView _cannon;
+        [SerializeField] private TriggerContacts _finishPoint;
 
         private void Awake()
         {
@@ -17,6 +17,8 @@ namespace Platformer
             var cameraController = new CameraController(player.Transform);
             var paralaxController = new ParalaxController(cameraController, _environmentData.BackGroundConfig);
             var inputInitialization = new InputInitialization();
+            var playerStateController = new PlayerStateController(player, _charactersData.PlayerConfig,
+                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput());
 
             var cannon = new AimingCannonController(_cannon.TurretTransform, player.Transform);
             var coreEmitter = new CoresEmitterController(_cannon.EmitterTransform, _cannon.TurretTransform,
@@ -25,10 +27,14 @@ namespace Platformer
             _controllers = new Controllers();
             _controllers.Add(cameraController);
             _controllers.Add(paralaxController);
-            _controllers.Add(new InputController(inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
-            _controllers.Add(new PlayerStateController(player, _charactersData.PlayerConfig, 
-                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
+            _controllers.Add(new InputController(inputInitialization.GetMoveInput(),
+                inputInitialization.GetAttackInput()));
+            _controllers.Add(playerStateController);
             _controllers.Add(new TimeRemainingController());
+            _controllers.Add(new CoinPlaceController(paralaxController.CoinsPlaces, _environmentData.CoinCnf,
+                cameraController));
+            _controllers.Add(new LevelCompleteManager(player.Transform, paralaxController.DeathZones, _finishPoint,
+                playerStateController));
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);
         }

@@ -1,4 +1,5 @@
-﻿namespace Platformer
+﻿
+namespace Platformer
 {
     internal interface IBackGroundFactory
     {

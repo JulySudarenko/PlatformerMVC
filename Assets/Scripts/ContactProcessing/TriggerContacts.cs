@@ -5,11 +5,11 @@ namespace Platformer
 {
     internal class TriggerContacts : MonoBehaviour
     {
-        public event Action<GameObject> IsContact;
+        public event Action<GameObject, GameObject> IsContact;
 
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            IsContact?.Invoke(other.gameObject);
+            IsContact?.Invoke(gameObject, other.gameObject);
         }
     }
 }

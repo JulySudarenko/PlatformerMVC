@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0b402b097bd4eb380d097a94dbcc357, type: 3}
   m_Name: EnvironmentData
   m_EditorClassIdentifier: 
-  _coinCnfPath: CoinCnf
+  _coinCnfPath: CoinConfig
   _rocketCnfPath: RocketCnf
   _backgroundCnfPath: BackGround
   _cannonCnfPath: CannonConfig

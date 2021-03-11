@@ -27,4 +27,4 @@ MonoBehaviour:
   _gravityForce: -5
   _spawnCoreTime: 2
   _lifeCoreTime: 5
-  _corePoolSize: 10
+  _corePoolSize: 5

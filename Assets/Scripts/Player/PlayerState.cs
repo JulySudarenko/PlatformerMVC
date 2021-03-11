@@ -8,6 +8,7 @@
         JumpDown = 3,
         SwordAttack = 4,
         FireAttack = 5,
-        Block = 6
+        Block = 6,
+        Win = 7
     }
 }

@@ -27,16 +27,12 @@
             <e p="AimingCannonController.cs" t="Include" />
             <e p="CannonView.cs" t="Include" />
             <e p="CoreController.cs" t="Include" />
-            <e p="CoreFactory.cs" t="Include" />
-            <e p="CoreInitialization.cs" t="Include" />
-            <e p="CorePool.cs" t="Include" />
             <e p="CoresEmitterController.cs" t="Include" />
-            <e p="ICoreFactory.cs" t="Include" />
           </e>
           <e p="Coins" t="Include">
-            <e p="CoinsFactory.cs" t="Include" />
-            <e p="CoinsInitialization.cs" t="Include" />
-            <e p="ICoinsFactory.cs" t="Include" />
+            <e p="CoinAnimation.cs" t="Include" />
+            <e p="CoinController.cs" t="Include" />
+            <e p="CoinsListener.cs" t="Include" />
           </e>
           <e p="Configs" t="Include">
             <e p="AnimationData.cs" t="Include" />
@@ -55,9 +51,11 @@
           </e>
           <e p="Controllers" t="Include">
             <e p="CameraController.cs" t="Include" />
+            <e p="CoinPlaceController.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="InputInitialization.cs" t="Include" />
+            <e p="LevelCompleteManager.cs" t="Include" />
             <e p="MainEntryPoint.cs" t="Include" />
             <e p="PlayerInitialization.cs" t="Include" />
             <e p="PlayerStateController.cs" t="Include" />
@@ -69,8 +67,8 @@
             <e p="IExecute.cs" t="Include" />
             <e p="IFixedExecute.cs" t="Include" />
             <e p="IInitialize.cs" t="Include" />
+            <e p="IWinState.cs" t="Include" />
           </e>
-          <e p="LevelObjectView.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="IPlayerFactory.cs" t="Include" />
             <e p="PlayerAnimation.cs" t="Include" />
@@ -84,6 +82,12 @@
             <e p="TimeRemaining.cs" t="Include" />
             <e p="TimeRemainingController.cs" t="Include" />
             <e p="TimeRemainingExtensions.cs" t="Include" />
+          </e>
+          <e p="UniversalFactory" t="Include">
+            <e p="Factory.cs" t="Include" />
+            <e p="IFactory.cs" t="Include" />
+            <e p="InitializeObject.cs" t="Include" />
+            <e p="Pool.cs" t="Include" />
           </e>
           <e p="UserInput" t="Include">
             <e p="IUserInputProxy.cs" t="Include" />

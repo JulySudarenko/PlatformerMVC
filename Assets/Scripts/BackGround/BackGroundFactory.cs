@@ -4,9 +4,9 @@ namespace Platformer
 {
     internal class BackGroundFactory : IBackGroundFactory
     {
-        private BackGroundConfig _config;
-        private Transform _parentRoot;
-        private ICamera _camera;
+        private readonly BackGroundConfig _config;
+        private readonly Transform _parentRoot;
+        private readonly ICamera _camera;
 
         public BackGroundFactory(BackGroundConfig config, Transform parent, ICamera camera)
         {
@@ -52,5 +52,6 @@ namespace Platformer
                 vector.y + Random.Range(-1.0f * delta, delta), vector.z);
             return newVector;
         }
+
     }
 }

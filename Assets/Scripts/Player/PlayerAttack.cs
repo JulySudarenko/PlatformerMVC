@@ -6,11 +6,11 @@ namespace Platformer
     internal class PlayerAttack
     {
         public Action<PlayerState> OnAttackStateChange;
+        private readonly IUserPressButtonProxy _swordAttackInputProxy;
+        private readonly IUserPressButtonProxy _fireAttackInputProxy;
+        private readonly IUserPressButtonProxy _blockInputProxy;
         private Transform _player;
         private PlayerConfig _playerConfig;
-        private IUserPressButtonProxy _swordAttackInputProxy;
-        private IUserPressButtonProxy _fireAttackInputProxy;
-        private IUserPressButtonProxy _blockInputProxy;
         private bool _swordAttack;
         private bool _fireAttack;
         private bool _block;

@@ -20,62 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8462b39a-2be9-4961-8092-46aeed32d545" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/BackGround/PlatformsVeryBig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/BackGround/PlatformsVeryBig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/EnvironmentData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/EnvironmentData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Items/CoinConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/Items/CoinConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/CloudSmallFont.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/CloudSmallFont.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsFirst.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsFirst.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsSecond.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsSecond.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsThrird.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsThrird.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Items/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Items/Coin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Traps/Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Traps/Cannon.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assistants/BuildAssistant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assistants/BuildAssistant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assistants/NameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assistants/NameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundInitialisation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundInitialisation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/IBackGroundFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/IBackGroundFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/AimingCannonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/AimingCannonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CorePool.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CorePool.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/CoresEmitterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/ICoreFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/ICoreFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Coins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Coins/CoinsFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Coins/CoinsFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Coins/CoinsInitialization.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Coins/CoinsInitialization.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Coins/ICoinsFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Coins/ICoinsFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/BackGroundConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/BackGroundConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/ItemConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/ItemConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContactProcessing/TriggerContacts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContactProcessing/TriggerContacts.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/InputInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/InputInitialization.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerStateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerStateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelObjectView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelObjectView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/Chain-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Traps/Chain-1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/Chain-2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Traps/Chain-2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/Chain-3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Traps/Chain-3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/Spike_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Traps/Spike_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/Spike_down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Traps/Spike_down.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/PlayerConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/PlayerConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/LevelCompleteManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/LevelCompleteManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/Circle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Traps/Circle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/Mace-Chain.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Traps/Mace-Chain.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/SpikesEmissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/SpikesEmissive.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/SpikesNew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Traps/SpikesNew.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tasks List.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks List.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +68,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CannonView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon/CoreInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/PlayerConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContactProcessing/ContactPoller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/CannonConfig.cs" />
@@ -133,7 +86,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/LevelCompleteManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CoinPlaceController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
@@ -150,6 +102,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundInitialisation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assistants/BuildAssistant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/LevelCompleteManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Configs/PlayerConfig.cs" />
       </list>
     </option>
   </component>
@@ -169,10 +123,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16204">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../!SaveBuild/PlatformerMVC_July_Sudarenko\Platformer.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\geekbrains.ru\Projects\Unity\!SaveBuild\PlatformerMVC_July_Sudarenko" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16204" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>

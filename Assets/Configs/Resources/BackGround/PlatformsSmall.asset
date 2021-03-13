@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb552f1d0a9f4c499669edc2f7784776, type: 3}
   m_Name: PlatformsSmall
   m_EditorClassIdentifier: 
-  BackGround: {fileID: 5736809433216759205, guid: 9a538ab98243b874691165117dee61c3,
+  BackGround: {fileID: 1589454428982362622, guid: 418036fab39570b4ca75738214e525c5,
     type: 3}
   _size: 20.48
   _sizeCoefficient: 3
@@ -20,3 +20,4 @@ MonoBehaviour:
   _isPlaceChanging: 0
   _isSizeChanging: 0
   _isCoinPlace: 1
+  _isDeathZone: 0

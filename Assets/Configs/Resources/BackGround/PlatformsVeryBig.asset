@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb552f1d0a9f4c499669edc2f7784776, type: 3}
   m_Name: PlatformsVeryBig
   m_EditorClassIdentifier: 
-  BackGround: {fileID: 6062260911100925457, guid: 1aec425c57f15c54a9239d536415639a,
+  BackGround: {fileID: 6595452385117676722, guid: 1aec425c57f15c54a9239d536415639a,
     type: 3}
   _size: 20.48
   _sizeCoefficient: 3

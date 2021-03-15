@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 namespace Platformer
 {
@@ -29,15 +31,7 @@ namespace Platformer
             _cameraDeltaPosition = _cameraNewPosition - _cameraStartPosition;
             _back.position = _backStartPosition + _cameraDeltaPosition * _config.SpeedCoefficient;
 
-            if (_cameraNewPosition.x - _previousBackPosition > 0)
-            {
-                CheckChildLocation(-1);
-            }
-
-            else if (_cameraNewPosition.x - _previousBackPosition < 0)
-            {
-                CheckChildLocation(1);
-            }
+            CheckChildLocation(_cameraNewPosition.x - _previousBackPosition > 0 ? -1 : 1);
 
             _previousBackPosition = _cameraNewPosition.x;
         }
@@ -51,9 +45,32 @@ namespace Platformer
                 if (sign * childPosition.x > sign * (_cameraNewPosition.x + sign * (_config.Size + _config.Size / 2)))
                 {
                     childPosition.x -= sign * _config.Size * _config.SizeCoefficient;
-                    child.transform.position = new Vector3(childPosition.x, childPosition.y, childPosition.z);
+                    child.transform.position = childPosition.Change(x: childPosition.x);
                 }
             }
+        }
+
+        public List<Transform> GetCoinsPlaces()
+        {
+            var places = new List<Transform>();
+            if (_config.IsCoinPlace)
+            {
+                places.AddRange(_back.transform.Cast<Transform>());
+            }
+
+            return places;
+        }
+        
+        public List<TriggerContacts> GetDeathZones()
+        {
+            var deathZones = new List<TriggerContacts>();
+            if (!_config.IsDeathZone) return deathZones;
+            foreach (Transform child in _back.transform)
+            {
+                deathZones.Add(child.gameObject.GetOrAddComponent<TriggerContacts>());
+            }
+
+            return deathZones;
         }
     }
 }

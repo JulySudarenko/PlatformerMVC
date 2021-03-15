@@ -4,47 +4,39 @@ namespace Platformer
 {
     public class MainEntryPoint : MonoBehaviour
     {
-        [SerializeField] private AnimationData _animationData;
         [SerializeField] private CharactersData _charactersData;
         [SerializeField] private EnvironmentData _environmentData;
         private Controllers _controllers;
 
-        [SerializeField] private LevelObjectView _playerView;
-        [SerializeField] private LevelObjectView _snailView;
-        [SerializeField] private LevelObjectView _coinView;
-        [SerializeField] private LevelObjectView _rocketView;
-        [SerializeField] private LevelObjectView _batView;
-        [SerializeField] private LevelObjectView _evilBatView;
-        [SerializeField] private int _animationSpeed = 10;
-        [SerializeField] private AnimState _animState;
+        [SerializeField] private CannonView _cannon;
+        [SerializeField] private TriggerContacts _finishPoint;
 
         private void Awake()
         {
-            var camera = new CameraController(_playerView.Transform);
-            var paralaxController = new ParalaxController(camera, _environmentData.BackGroundConfig);
+            var player = new PlayerInitialization(new PlayerFactory(_charactersData.PlayerConfig));
+            var cameraController = new CameraController(player.Transform);
+            var paralaxController = new ParalaxController(cameraController, _environmentData.BackGroundConfig);
+            var inputInitialization = new InputInitialization();
+            var playerStateController = new PlayerStateController(player, _charactersData.PlayerConfig,
+                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput());
 
-            var redSpotAnimator = new SpriteAnimator(_animationData.RedSpotAnimatorCnf);
-            var snailAnimator = new SpriteAnimator(_animationData.SnailAnimatorCnf);
-            var coinAnimator = new SpriteAnimator(_animationData.CoinAnimatorCnf);
-            var rocketAnimator = new SpriteAnimator(_animationData.RocketAnimatorCnf);
-            var batAnimator = new SpriteAnimator(_animationData.BatEnemyAnimatorCnf);
-            var evilBatAnimator = new SpriteAnimator(_animationData.EvilBatEnemyAnimatorCnf);
+            var cannon = new AimingCannonController(_cannon.TurretTransform, player.Transform);
+            var coreEmitter = new CoresEmitterController(_cannon.EmitterTransform, _cannon.TurretTransform,
+                _environmentData.CannonConfig);
 
             _controllers = new Controllers();
-            _controllers.Add(redSpotAnimator);
-            _controllers.Add(snailAnimator);
-            _controllers.Add(coinAnimator);
-            _controllers.Add(rocketAnimator);
-            _controllers.Add(batAnimator);
-            _controllers.Add(evilBatAnimator);
+            _controllers.Add(cameraController);
             _controllers.Add(paralaxController);
-
-            redSpotAnimator.StartAnimation(_playerView.SpriteRenderer, _animState, true, _animationSpeed);
-            snailAnimator.StartAnimation(_snailView.SpriteRenderer, _animState, true, _animationSpeed);
-            coinAnimator.StartAnimation(_coinView.SpriteRenderer, _animState, true, _animationSpeed);
-            rocketAnimator.StartAnimation(_rocketView.SpriteRenderer, _animState, true, _animationSpeed);
-            batAnimator.StartAnimation(_batView.SpriteRenderer, AnimState.Attack, true, _animationSpeed);
-            evilBatAnimator.StartAnimation(_evilBatView.SpriteRenderer, AnimState.Attack, true, _animationSpeed);
+            _controllers.Add(new InputController(inputInitialization.GetMoveInput(),
+                inputInitialization.GetAttackInput()));
+            _controllers.Add(playerStateController);
+            _controllers.Add(new TimeRemainingController());
+            _controllers.Add(new CoinPlaceController(paralaxController.CoinsPlaces, _environmentData.CoinCnf,
+                cameraController));
+            _controllers.Add(new LevelCompleteManager(player.Transform, paralaxController.DeathZones, _finishPoint,
+                playerStateController));
+            _controllers.Add(cannon);
+            _controllers.Add(coreEmitter);
         }
 
         private void Start()
@@ -59,7 +51,7 @@ namespace Platformer
 
         private void FixedUpdate()
         {
-            _controllers.FixedExecute(Time.deltaTime);
+            _controllers.FixedExecute(Time.fixedDeltaTime);
         }
 
         private void OnDestroy()

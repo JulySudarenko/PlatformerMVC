@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee7f342e3a9478793cc47d98746bf71, type: 3}
   m_Name: CoinConfig
   m_EditorClassIdentifier: 
-  ItemPrefab: {fileID: 0}
+  ItemPrefab: {fileID: 1709975463185438537, guid: 54fe2ba758c8c6941b0bfb3083b0c840,
+    type: 3}
+  _itemAnimeCnfPath: AnimCoinCnf
+  _itemAnimationSpeed: 10
+  _itemPoolSize: 25
+  _itemCount: 3

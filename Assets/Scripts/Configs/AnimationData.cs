@@ -7,19 +7,33 @@ namespace Platformer
     internal class AnimationData : ScriptableObject
     {
         [SerializeField] private string _redSpotAnimeCnfPath;
-        [SerializeField] private string _snailAnimeCnfPath;
+        [SerializeField] private string _knightAnimeCnfPath = "AnimKnightCnf";
+        [SerializeField] private string _snailAnimeCnfPath = "AnimSnailCnf";
         [SerializeField] private string _batEnemyAnimeCnfPath;
         [SerializeField] private string _evilBatEnemyAnimeCnfPath;
         [SerializeField] private string _coinAnimeCnfPath;
         [SerializeField] private string _rocketAnimeCnfPath;
 
         private SpriteAnimatorConfig _redSpotAnimatorCnf;
-        private SpriteAnimatorConfig _snailAnimatorCnf;
+        private SpriteAnimatorConfig _knightAnimeCnf;
         private SpriteAnimatorConfig _batEnemyAnimatorCnf;
         private SpriteAnimatorConfig _evilBatEnemyAnimatorCnf;
         private SpriteAnimatorConfig _coinAnimatorCnf;
         private SpriteAnimatorConfig _rocketAnimatorCnf;
-        
+        private SpriteAnimatorConfig _snailAnimatorCnf;
+
+        public SpriteAnimatorConfig SnailAnimatorCnf
+        {
+            get
+            {
+                if (_snailAnimatorCnf == null)
+                {
+                    _snailAnimatorCnf = Load<SpriteAnimatorConfig>("Anime/" + _snailAnimeCnfPath);
+                }
+
+                return _snailAnimatorCnf;
+            }
+        }
         public SpriteAnimatorConfig RedSpotAnimatorCnf
         {
             get
@@ -33,16 +47,16 @@ namespace Platformer
             }
         }
 
-        public SpriteAnimatorConfig SnailAnimatorCnf
+        public SpriteAnimatorConfig KnightAnimeCnf
         {
             get
             {
-                if (_snailAnimatorCnf == null)
+                if (_knightAnimeCnf == null)
                 {
-                    _snailAnimatorCnf = Load<SpriteAnimatorConfig>("Anime/" + _snailAnimeCnfPath);
+                    _knightAnimeCnf = Load<SpriteAnimatorConfig>("Anime/" + _knightAnimeCnfPath);
                 }
 
-                return _snailAnimatorCnf;
+                return _knightAnimeCnf;
             }
         }
 
@@ -58,7 +72,7 @@ namespace Platformer
                 return _evilBatEnemyAnimatorCnf;
             }
         }
-        
+
         public SpriteAnimatorConfig EvilBatEnemyAnimatorCnf
         {
             get
@@ -71,7 +85,7 @@ namespace Platformer
                 return _batEnemyAnimatorCnf;
             }
         }
-        
+
         public SpriteAnimatorConfig CoinAnimatorCnf
         {
             get
@@ -84,7 +98,7 @@ namespace Platformer
                 return _coinAnimatorCnf;
             }
         }
-        
+
         public SpriteAnimatorConfig RocketAnimatorCnf
         {
             get

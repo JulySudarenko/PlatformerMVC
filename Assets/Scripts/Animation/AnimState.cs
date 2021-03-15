@@ -8,8 +8,9 @@
         JumpDown = 3,
         Attack = 4,
         Hit = 5,
-        Hide = 6,
+        Block = 6,
         Victory = 7,
         Death = 8,
+        FireAttack = 9,
     }
 }

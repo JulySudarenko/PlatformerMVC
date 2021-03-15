@@ -5,11 +5,11 @@ namespace Platformer
 {
     internal class PlayerAnimation
     {
-        private SpriteAnimator _playerAnimator;
-        private SpriteRenderer _spriteRenderer;
+        private readonly SpriteAnimator _playerAnimator;
+        private readonly SpriteRenderer _spriteRenderer;
+        private readonly float _animationSpeed;
         private AnimState _animationState;
-        private float _animationSpeed;
-
+       
         public PlayerAnimation(SpriteRenderer sprite, PlayerConfig config)
         {
             _playerAnimator = new SpriteAnimator(config.KnightAnimeCnf);
@@ -43,6 +43,9 @@ namespace Platformer
                     break;
                 case PlayerState.Block:
                     _animationState = AnimState.Block;
+                    break;
+                case PlayerState.Win:
+                    _animationState = AnimState.Victory;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(state), state, null);

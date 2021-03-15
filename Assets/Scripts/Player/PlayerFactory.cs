@@ -4,7 +4,7 @@ namespace Platformer
 {
     internal class PlayerFactory : IPlayerFactory
     {
-        private PlayerConfig _config;
+        private readonly PlayerConfig _config;
 
         public PlayerFactory(PlayerConfig config)
         {
@@ -14,7 +14,8 @@ namespace Platformer
         public GameObject Create()
         {
             var player = Object.Instantiate(_config.PlayerPrefab);
-            player.transform.position = player.transform.position.Change(x: -5f);
+            player.transform.position = player.transform.position.Change(x: _config.StartPointX);
+            player.name = NameManager.PLAYER_NAME;
             return player;
         }
     }

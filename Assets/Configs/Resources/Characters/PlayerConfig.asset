@@ -18,6 +18,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   _knightAnimeCnfPath: AnimKnightCnf
-  _startPointX: {x: -5, y: 0, z: 0}
+  _startPointX: -5
   _animationSpeed: 10
-  _walkSpeed: 3
+  _walkSpeed: 150
+  _movingThresh: 0.1
+  _jumpThresh: 0.1
+  _groundDistance: 0.8
+  _jumpStartForce: 10
+  _gravityForce: -10

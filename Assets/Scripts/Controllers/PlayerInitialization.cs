@@ -4,11 +4,11 @@ namespace Platformer
 {
     internal class PlayerInitialization
     {
-        public Transform Transform;
-        public SpriteRenderer SpriteRenderer;
-        public Rigidbody2D Rigidbody;
-        public Collider2D Collider;
-        private GameObject _player;
+        public readonly Transform Transform;
+        public readonly SpriteRenderer SpriteRenderer;
+        public readonly Rigidbody2D Rigidbody;
+        public readonly Collider2D Collider;
+        private readonly GameObject _player;
 
         public PlayerInitialization(IPlayerFactory factory)
         {

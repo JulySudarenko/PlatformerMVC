@@ -4,9 +4,8 @@ namespace Platformer
 {
     internal class AimingCannonController : IExecute
     {
-        Transform _cannon;
-        Transform _aim;
-        
+        private readonly Transform _cannon;
+        private readonly Transform _aim;
         private Vector3 _direction;
         private Vector3 _axis;
         private float _angle;

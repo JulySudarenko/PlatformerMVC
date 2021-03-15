@@ -7,23 +7,27 @@ namespace Platformer
     {
         public Action<PlayerState> OnMoveStateChange;
         private readonly Transform _player;
+        private readonly Rigidbody2D _rigidbody2D;
         private readonly PlayerConfig _config;
         private readonly IUserInputProxy _horizontalInputProxy;
         private readonly IUserInputProxy _verticalInputProxy;
+        private readonly ContactPoller _contactPoller;
         private readonly Vector3 _leftScale = new Vector3(-1, 1, 1);
         private readonly Vector3 _rightScale = new Vector3(1, 1, 1);
         private PlayerState _playerState;
-        private float _jumpForce = 0f;
+        private float _newVelocity;
         private float _horizontal;
         private float _vertical;
         private bool _goSideWay;
         private bool _doJump;
-        
-        public PlayerMovement(Transform player, PlayerConfig config,
+
+        public PlayerMovement(PlayerInitialization player, PlayerConfig config,
             (IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) input)
         {
-            _player = player;
+            _player = player.Transform;
+            _rigidbody2D = player.Rigidbody;
             _config = config;
+            _contactPoller = new ContactPoller(player.Collider);
             _horizontalInputProxy = input.inputHorizontal;
             _verticalInputProxy = input.inputVertical;
             _horizontalInputProxy.AxisOnChange += HorizontalOnAxisOnChange;
@@ -37,37 +41,50 @@ namespace Platformer
         {
             _goSideWay = Mathf.Abs(_horizontal) > _config.MovingThresh;
             _doJump = _vertical > 0;
-            if (_goSideWay) GoSideWay(deltaTime);
-            DoJump(deltaTime);
-            OnMoveStateChange?.Invoke(_playerState);
+            _contactPoller.Execute(deltaTime);
+
+            _newVelocity = 0.0f;
+
+            GoSideWay(deltaTime);
+            DoJump();
+            DoAnimation();
         }
 
-        private void DoJump(float deltaTime)
+        private void DoJump()
         {
-            if (IsGrounded())
+            if (_contactPoller.IsGrounded && 
+                _doJump && 
+                _rigidbody2D.velocity.y <= _config.JumpThresh)
             {
-                _playerState = _goSideWay ? PlayerState.Walk : PlayerState.Stay;
-                _jumpForce = (_doJump && _jumpForce == 0f) ? _config.JumpStartForce : 0f;
-                _player.position += Vector3.up * (_jumpForce * deltaTime);
-            }
-            else
-            {
-                _jumpForce += _config.GravityForce * deltaTime;
-                _player.position += Vector3.up * (deltaTime * _jumpForce);
-                _playerState = _jumpForce > 0 ? PlayerState.JumpUp : PlayerState.JumpDown;
+                _rigidbody2D.AddForce(Vector2.up * _config.JumpStartForce, ForceMode2D.Impulse);
             }
         }
 
         private void GoSideWay(float deltaTime)
         {
-            _player.localScale = _horizontal < 0 ? _leftScale : _rightScale;
-            _player.position += Vector3.right * (deltaTime * _config.WalkSpeed * (_horizontal < 0 ? -1 : 1));
+            if (_goSideWay &&
+                (_horizontal > 0 || !_contactPoller.HasLeftContact) &&
+                (_horizontal < 0 || !_contactPoller.HasRightContact))
+            {
+                _newVelocity = deltaTime * _config.WalkSpeed * (_horizontal < 0 ? -1 : 1);
+                _player.localScale = _horizontal < 0 ? _leftScale : _rightScale;
+            }
+
+            _rigidbody2D.velocity = _rigidbody2D.velocity.Change(x: _newVelocity);
         }
 
-        private bool IsGrounded()
+        private void DoAnimation()
         {
-            RaycastHit2D hit = Physics2D.Raycast(_player.position, Vector2.down, _config.GroundDistance, _config.Mask);
-            return hit;
+            if (_contactPoller.IsGrounded)
+            {
+                _playerState = _goSideWay ? PlayerState.Walk : PlayerState.Stay;
+            }
+            else
+            {
+                _playerState = _doJump ? PlayerState.JumpUp : PlayerState.JumpDown;
+            }
+
+            OnMoveStateChange?.Invoke(_playerState);
         }
 
         public void Cleanup()

@@ -4,17 +4,12 @@ namespace Platformer
 {
     public class MainEntryPoint : MonoBehaviour
     {
-        [SerializeField] private AnimationData _animationData;
         [SerializeField] private CharactersData _charactersData;
         [SerializeField] private EnvironmentData _environmentData;
         private Controllers _controllers;
 
         [SerializeField] private CannonView _cannon;
-        [SerializeField] private LevelObjectView _coinView;
-        [SerializeField] private LevelObjectView _batView;
-        [SerializeField] private LevelObjectView _evilBatView;
-        [SerializeField] private int _animationSpeed = 10;
-        [SerializeField] private AnimState _animState;
+        [SerializeField] private TriggerContacts _finishPoint;
 
         private void Awake()
         {
@@ -22,32 +17,26 @@ namespace Platformer
             var cameraController = new CameraController(player.Transform);
             var paralaxController = new ParalaxController(cameraController, _environmentData.BackGroundConfig);
             var inputInitialization = new InputInitialization();
+            var playerStateController = new PlayerStateController(player, _charactersData.PlayerConfig,
+                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput());
 
             var cannon = new AimingCannonController(_cannon.TurretTransform, player.Transform);
             var coreEmitter = new CoresEmitterController(_cannon.EmitterTransform, _cannon.TurretTransform,
                 _environmentData.CannonConfig);
 
-            var coinAnimator = new SpriteAnimator(_animationData.CoinAnimatorCnf);
-            var batAnimator = new SpriteAnimator(_animationData.BatEnemyAnimatorCnf);
-            var evilBatAnimator = new SpriteAnimator(_animationData.EvilBatEnemyAnimatorCnf);
-
             _controllers = new Controllers();
             _controllers.Add(cameraController);
             _controllers.Add(paralaxController);
-            _controllers.Add(new InputController(inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
-            _controllers.Add(new PlayerStateController(player.Transform, player.SpriteRenderer,
-                _charactersData.PlayerConfig, inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput()));
+            _controllers.Add(new InputController(inputInitialization.GetMoveInput(),
+                inputInitialization.GetAttackInput()));
+            _controllers.Add(playerStateController);
             _controllers.Add(new TimeRemainingController());
+            _controllers.Add(new CoinPlaceController(paralaxController.CoinsPlaces, _environmentData.CoinCnf,
+                cameraController));
+            _controllers.Add(new LevelCompleteManager(player.Transform, paralaxController.DeathZones, _finishPoint,
+                playerStateController));
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);
-          
-            _controllers.Add(coinAnimator);
-            _controllers.Add(batAnimator);
-            _controllers.Add(evilBatAnimator);
-
-            coinAnimator.StartAnimation(_coinView.SpriteRenderer, _animState, true, _animationSpeed);
-            batAnimator.StartAnimation(_batView.SpriteRenderer, AnimState.Attack, true, _animationSpeed);
-            evilBatAnimator.StartAnimation(_evilBatView.SpriteRenderer, AnimState.Attack, true, _animationSpeed);
         }
 
         private void Start()

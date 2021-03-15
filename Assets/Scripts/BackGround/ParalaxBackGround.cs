@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 namespace Platformer
 {
@@ -46,6 +48,29 @@ namespace Platformer
                     child.transform.position = childPosition.Change(x: childPosition.x);
                 }
             }
+        }
+
+        public List<Transform> GetCoinsPlaces()
+        {
+            var places = new List<Transform>();
+            if (_config.IsCoinPlace)
+            {
+                places.AddRange(_back.transform.Cast<Transform>());
+            }
+
+            return places;
+        }
+        
+        public List<TriggerContacts> GetDeathZones()
+        {
+            var deathZones = new List<TriggerContacts>();
+            if (!_config.IsDeathZone) return deathZones;
+            foreach (Transform child in _back.transform)
+            {
+                deathZones.Add(child.gameObject.GetOrAddComponent<TriggerContacts>());
+            }
+
+            return deathZones;
         }
     }
 }

@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8462b39a-2be9-4961-8092-46aeed32d545" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tasks List.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks List.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

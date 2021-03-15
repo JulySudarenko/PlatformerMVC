@@ -80,6 +80,8 @@ https://drive.google.com/file/d/1uSwhrRevqVtT3KXyxCIeUtc503TGLtAO/view?usp=shari
 Самый актуальный билд 
 https://drive.google.com/file/d/15darK6PX1bmQ_mXYer6irBzbNEO9ASnA/view?usp=sharing
 
+Pull request
+https://github.com/JulySudarenko/PlatformerMVC/pull/4/files?file-filters%5B%5D=.cs&file-filters%5B%5D=.txt
 
 Lesson 5
 1. Установите A* Pathfiding Project. Настройте простого врага только с помощью представленных в нём компонентов.

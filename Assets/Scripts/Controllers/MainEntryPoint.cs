@@ -9,6 +9,8 @@ namespace Platformer
         private Controllers _controllers;
 
         [SerializeField] private CannonView _cannon;
+        [SerializeField] private GameObject _mace;
+        [SerializeField] private GameObject _bridge;
         [SerializeField] private TriggerContacts _finishPoint;
 
         private void Awake()
@@ -23,6 +25,8 @@ namespace Platformer
             var cannon = new AimingCannonController(_cannon.TurretTransform, player.Transform);
             var coreEmitter = new CoresEmitterController(_cannon.EmitterTransform, _cannon.TurretTransform,
                 _environmentData.CannonConfig);
+            var mace = new MaceController(_mace);
+            var bridge = new BridgeDivider(_bridge);
 
             _controllers = new Controllers();
             _controllers.Add(cameraController);
@@ -35,8 +39,10 @@ namespace Platformer
                 cameraController));
             _controllers.Add(new LevelCompleteManager(player.Transform, paralaxController.DeathZones, _finishPoint,
                 playerStateController));
+            
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);
+            _controllers.Add(bridge);
         }
 
         private void Start()

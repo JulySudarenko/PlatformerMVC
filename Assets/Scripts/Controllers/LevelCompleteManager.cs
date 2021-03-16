@@ -59,7 +59,7 @@ namespace Platformer
         private void ActivatePlayer()
         {
             _character.transform.position = _startPosition;
-            _character.gameObject.SetActive(true);
+            _character.gameObject.SetActive(true);   
         }
 
         public void Cleanup()

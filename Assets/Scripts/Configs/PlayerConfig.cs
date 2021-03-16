@@ -9,7 +9,7 @@ namespace Platformer
         public GameObject PlayerPrefab;
         public LayerMask Mask;
         [SerializeField] private string _knightAnimeCnfPath = "AnimKnightCnf";
-        [SerializeField, Range(-20, 20)] private float _startPointX = -5.0f;
+        [SerializeField, Range(-20, 100)] private float _startPointX = -5.0f;
         [SerializeField, Range(1, 20)] private int _animationSpeed = 10;
         [SerializeField, Range(1, 500)] private float _walkSpeed = 150.0f;
         [SerializeField, Range(0, 1)] private float _movingThresh = 0.1f;

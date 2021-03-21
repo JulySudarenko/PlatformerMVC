@@ -1,19 +1,22 @@
-﻿using System;
+﻿using Pathfinding;
+using System;
 using UnityEngine;
-using Pathfinding;
+
 
 namespace Platformer
 {
     public class EnemiesConfig : MonoBehaviour
     {
-        [Header("Simple AI")] [SerializeField] private AIConfig _simplePatrolAIConfig;
+        [Header("Simple AI")] 
+        [SerializeField] private AIConfig _simplePatrolAIConfig;
         [SerializeField] private LevelObjectView _simplePatrolAIView;
         [SerializeField] private AnimationData _animationData;
 
-        [Header("Stalker AI")] [SerializeField]
-        private AIConfig _stalkerAIConfig;
+        [Header("Stalker AI")]
+        [SerializeField] private AIConfig _stalkerAIConfig;
 
         [SerializeField] private LevelObjectView _stalkerAIView;
+
         [SerializeField] private Seeker _stalkerAISeeker;
         [SerializeField] private Transform _stalkerAITarget;
 
@@ -28,14 +31,10 @@ namespace Platformer
 
         private SimplePatrolAI _simplePatrolAI;
 
-        private StalkerAI _stalkerAI;
+        //private StalkerAI _stalkerAI;
 
         // private ProtectorAI _protectorAI;
         // private ProtectedZone _protectedZone;
-        private void Awake()
-        {
-            throw new NotImplementedException();
-        }
 
         private void Start()
         {
@@ -60,20 +59,17 @@ namespace Platformer
             // if (_stalkerAI != null) _stalkerAI.FixedExecute(Time.fixedDeltaTime);
             //     
             //   AstarPath.active.Scan();
-            // }
-
-            // private void OnDestroy()
-            // {
-            //     _protectorAI.Deinit();
-            //     _protectedZone.Deinit();
-            // }
-            //
-            // private void RecalculateAIPath()
-            // {
-            //     _stalkerAI.RecalculatePath();
-            // }
         }
+
+        // private void OnDestroy()
+        // {
+        //     _protectorAI.Deinit();
+        //     _protectedZone.Deinit();
+        // }
+        //
+        // private void RecalculateAIPath()
+        // {
+        //     _stalkerAI.RecalculatePath();
+        // }
     }
 }
-
-

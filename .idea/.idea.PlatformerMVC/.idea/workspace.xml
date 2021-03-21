@@ -20,28 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8462b39a-2be9-4961-8092-46aeed32d545" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/BatEnemyCnf.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/BatEnemyCnf.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformSmall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformSmall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsFirst.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsFirst.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsSecond.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsSecond.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsThrird.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround/PlatformsThrird.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Bat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Bat.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/AnimationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/AnimationData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/EnemyConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/EnemyConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/ItemConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/ItemConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Traps/BridgeDivider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Traps/BridgeDivider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_04.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Attack/Version1_Attack1_05.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Left/Run/Version1_Run_00.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Level 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Sprites/BatEnemy/Level 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tasks List.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks List.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/AIConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/AIConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemiesConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemiesConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/LevelObjectView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/LevelObjectView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAIModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAIModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAIModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAIModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,15 +96,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Traps/BridgeDivider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/LevelObjectView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/AIConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/AnimationData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/ItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/AstarPathfindingProject/ExampleScenes/Example12_Procedural/ProceduralGridMover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAIModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAIModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/AIConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/LevelObjectView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAIModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAIModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemiesConfig.cs" />
       </list>
     </option>
@@ -272,24 +262,5 @@
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state x="2351" y="-1" width="672" height="678" key="search.everywhere.popup/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1614679068834" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAIModel.cs</url>
-          <line>23</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\PlatformerMVC\Assets\Scripts\Enemy\SimplePatrolAIModel.cs" initialLine="21">
-            <startOffsets>
-              <option value="749" />
-            </startOffsets>
-            <endOffsets>
-              <option value="777" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

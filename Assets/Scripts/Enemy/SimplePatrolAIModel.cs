@@ -2,11 +2,11 @@
 
 namespace Platformer
 {
-    internal class SimplePatrolAIModel
+    public class SimplePatrolAIModel
     {
         private readonly AIConfig _config;
         private Transform _target;
-        private float _minSgrDistanceToTarget;
+        private readonly float _minSgrDistanceToTarget;
         private int _currentPointIndex;
 
         public SimplePatrolAIModel(AIConfig config)

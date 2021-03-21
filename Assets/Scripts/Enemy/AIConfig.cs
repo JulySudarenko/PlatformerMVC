@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Platformer
 {
     [Serializable]
-    internal struct AIConfig
+    public struct AIConfig
     {
         public float Speed;
         public float MINDistanceToTarget;

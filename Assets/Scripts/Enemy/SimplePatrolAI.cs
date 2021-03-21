@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Platformer
 {
-    internal class SimplePatrolAI
+    public class SimplePatrolAI
     {
         private readonly LevelObjectView _view;
         private readonly SimplePatrolAIModel _aiModel;

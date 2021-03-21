@@ -12,4 +12,5 @@ namespace Platformer
         public float EnemySpeed => _enemySpeed;
         public float EnemyPower => _enemyPower;
     }
+
 }

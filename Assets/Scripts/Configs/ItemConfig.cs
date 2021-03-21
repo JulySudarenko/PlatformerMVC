@@ -25,7 +25,7 @@ namespace Platformer
                 {
                     _itemAnimatorCnf = Load<SpriteAnimatorConfig>("Anime/" + _itemAnimeCnfPath);
                 }
-
+        
                 return _itemAnimatorCnf;
             }
         }

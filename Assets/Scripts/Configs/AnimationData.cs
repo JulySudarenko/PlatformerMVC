@@ -9,8 +9,8 @@ namespace Platformer
         [SerializeField] private string _redSpotAnimeCnfPath;
         [SerializeField] private string _knightAnimeCnfPath = "AnimKnightCnf";
         [SerializeField] private string _snailAnimeCnfPath = "AnimSnailCnf";
-        [SerializeField] private string _batEnemyAnimeCnfPath;
-        [SerializeField] private string _evilBatEnemyAnimeCnfPath;
+        [SerializeField] private string _batEnemyAnimeCnfPath = "AnimBatEnemyCnf";
+        [SerializeField] private string _evilBatEnemyAnimeCnfPath = "AnimEvilBatEnemyCnf";
         [SerializeField] private string _coinAnimeCnfPath;
         [SerializeField] private string _rocketAnimeCnfPath;
 

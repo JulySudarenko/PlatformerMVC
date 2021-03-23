@@ -39,7 +39,7 @@ namespace Platformer
                 cameraController));
             _controllers.Add(new LevelCompleteManager(player.Transform, paralaxController.DeathZones, _finishPoint,
                 playerStateController));
-            
+
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);
             _controllers.Add(bridge);

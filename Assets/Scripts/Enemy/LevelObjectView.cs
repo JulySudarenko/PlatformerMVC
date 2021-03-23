@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 
+
 namespace Platformer
 {
+
     public class LevelObjectView : MonoBehaviour
     {
         public Transform Transform;

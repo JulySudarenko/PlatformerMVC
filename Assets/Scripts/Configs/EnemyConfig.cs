@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Platformer
 {
@@ -8,9 +9,11 @@ namespace Platformer
         public Transform EnemyPrefab;
         [SerializeField] private float _enemySpeed;
         [SerializeField] private float _enemyPower;
+        [SerializeField] private List<Transform> _wayPoints;
 
-        public float EnemySpeed => _enemySpeed;
+        public float Speed => _enemySpeed;
         public float EnemyPower => _enemyPower;
+        public List<Transform> WayPoints => _wayPoints;
     }
 
 }

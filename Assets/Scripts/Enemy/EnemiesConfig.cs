@@ -1,45 +1,40 @@
-﻿using Pathfinding;
-using System;
+﻿using System;
 using UnityEngine;
-
 
 namespace Platformer
 {
+
     public class EnemiesConfig : MonoBehaviour
     {
         [Header("Simple AI")] 
         [SerializeField] private AIConfig _simplePatrolAIConfig;
         [SerializeField] private LevelObjectView _simplePatrolAIView;
         [SerializeField] private AnimationData _animationData;
+        [SerializeField] private LayerMask _layerMask;
 
         [Header("Stalker AI")]
         [SerializeField] private AIConfig _stalkerAIConfig;
-
         [SerializeField] private LevelObjectView _stalkerAIView;
-
-        [SerializeField] private Seeker _stalkerAISeeker;
+        //[SerializeField] private Seeker _stalkerAISeeker;
         [SerializeField] private Transform _stalkerAITarget;
 
-        [Header("Protector AI")] [SerializeField]
-        private LevelObjectView _protectorAIView;
-
-        [SerializeField] private AIDestinationSetter _protectorAIDestinationSetter;
-
+        [Header("Protector AI")] 
+        [SerializeField] private LevelObjectView _protectorAIView;
+        //[SerializeField] private AIDestinationSetter _protectorAIDestinationSetter;
         //[SerializeField] private AIPatrolPath _protectorAIPatrolPath;
-        // [SerializeField] private LevelObjectTrigger _protectedZoneTrigger;
+        //[SerializeField] private LevelObjectTrigger _protectedZoneTrigger;
         [SerializeField] private Transform[] _protectorWaypoints;
 
         private SimplePatrolAI _simplePatrolAI;
-
         //private StalkerAI _stalkerAI;
-
         // private ProtectorAI _protectorAI;
         // private ProtectedZone _protectedZone;
 
         private void Start()
         {
-            _simplePatrolAI = new SimplePatrolAI(_simplePatrolAIView, new SimplePatrolAIModel(_simplePatrolAIConfig),
-                _animationData.BatEnemyAnimatorCnf);
+            _simplePatrolAI =
+                new SimplePatrolAI(_simplePatrolAIView, new SimplePatrolAIModel(_simplePatrolAIConfig),
+            _animationData.BatEnemyAnimatorCnf, _layerMask);
 
             //_stalkerAI = new StalkerAI(_stalkerAIView, new StalkerAIModel(_stalkerAIConfig), _stalkerAISeeker, _stalkerAITarget);
             //InvokeRepeating(nameof(RecalculateAIPath), 0.0f, 1.0f);
@@ -51,14 +46,14 @@ namespace Platformer
             //     
             // _protectedZone = new _protectedZone(_protectedZoneTrigger, new List<IProtector> {_protectorAI});
             // _protectedZone.Init();
-            // }
-            //
-            // private void FixedUpdate()
-            // {
-            // if (_simplePatrolAI != null) _simplePatrolAI.FixedExecute(Time.fixedDeltaTime);
-            // if (_stalkerAI != null) _stalkerAI.FixedExecute(Time.fixedDeltaTime);
-            //     
-            //   AstarPath.active.Scan();
+        }
+
+        private void FixedUpdate()
+        {
+             if (_simplePatrolAI != null) _simplePatrolAI.FixedExecute(Time.fixedDeltaTime);
+             //if (_stalkerAI != null) _stalkerAI.FixedExecute(Time.fixedDeltaTime);
+                 
+             //AstarPath.active.Scan();
         }
 
         // private void OnDestroy()
@@ -72,4 +67,7 @@ namespace Platformer
         //     _stalkerAI.RecalculatePath();
         // }
     }
+
 }
+    
+

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+
 namespace Platformer
 {
     public class SimplePatrolAIModel

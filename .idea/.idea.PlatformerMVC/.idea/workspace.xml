@@ -20,67 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8462b39a-2be9-4961-8092-46aeed32d545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/DrawTilesManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/BatEnemyCnf.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/BatEnemyCnf.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/EvilBatEnemyCnf.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/EvilBatEnemyCnf.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/RedSpotCnf.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/RedSpotCnf.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/SnailCnf.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/Characters/SnailCnf.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/CharactersData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/CharactersData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/Resources/EnvironmentData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Resources/EnvironmentData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Bat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Bat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/EvilBat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/EvilBat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Knight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Knight.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Snail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Snail.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlatformLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TilemapLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TilemapLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundInitialisation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/BackGroundInitialisation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/IBackGroundFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/IBackGroundFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParallaxBackGround.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxBackGround.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParallaxBackGround.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParallaxController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParalaxController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackGround/ParallaxController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/CharactersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/CharactersData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/EnemyConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/EnemyConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/EnvironmentData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/LevelCompleteManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/LevelCompleteManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainEntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/AIConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/AIConfig.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemiesConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemiesConfig.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/LevelObjectView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/LevelObjectView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAIModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/SimplePatrolAIModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAIModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/StalkerAIModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/GenerateLevelEntryPointController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/GenerateLevelEntryPointController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/GenerateLevelView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/GenerateLevelView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platformer.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platformer.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UniversalFactory/InitializeObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UniversalFactory/InitializeItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UniversalFactory/InitializeObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UniversalFactory/InitializeItem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UniversalFactory/Pool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UniversalFactory/Pool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Autumn Bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Autumn Bush.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Autumn Tree.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/BackGroundsItems/Autumn Tree.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/Dirt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Tiles/MySpring/Dirt.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tasks List.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks List.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/PlatformTileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/PlatformTileManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/WaterTileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/WaterTileManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,10 +101,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/DungeonTiles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/GrassTileManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/MapGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/PlatformTileManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/WaterTileManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/TileManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/DrawTilesManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/WaterTileManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GenerateLevel/Generator/PlatformTileManager.cs" />
       </list>
     </option>
   </component>

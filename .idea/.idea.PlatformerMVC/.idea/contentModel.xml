@@ -221,8 +221,8 @@
             <e p="BackGroundFactory.cs" t="Include" />
             <e p="BackGroundInitialisation.cs" t="Include" />
             <e p="IBackGroundFactory.cs" t="Include" />
-            <e p="ParalaxBackGround.cs" t="Include" />
-            <e p="ParalaxController.cs" t="Include" />
+            <e p="ParallaxBackGround.cs" t="Include" />
+            <e p="ParallaxController.cs" t="Include" />
           </e>
           <e p="Cannon" t="Include">
             <e p="AimingCannonController.cs" t="Include" />
@@ -243,6 +243,7 @@
             <e p="EnemyConfig.cs" t="Include" />
             <e p="EnvironmentData.cs" t="Include" />
             <e p="ItemConfig.cs" t="Include" />
+            <e p="LevelConfig.cs" t="Include" />
             <e p="PlayerConfig.cs" t="Include" />
             <e p="SpriteAnimatorConfig.cs" t="Include" />
           </e>
@@ -254,6 +255,7 @@
             <e p="CameraController.cs" t="Include" />
             <e p="CoinPlaceController.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
+            <e p="GenerateLevelEntryPointController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="InputInitialization.cs" t="Include" />
             <e p="LevelCompleteManager.cs" t="Include" />
@@ -262,13 +264,46 @@
             <e p="PlayerStateController.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
-            <e p="AIConfig.cs" t="Include" />
-            <e p="EnemiesConfig.cs" t="Include" />
-            <e p="LevelObjectView.cs" t="Include" />
-            <e p="SimplePatrolAI.cs" t="Include" />
-            <e p="SimplePatrolAIModel.cs" t="Include" />
-            <e p="StalkerAI.cs" t="Include" />
-            <e p="StalkerAIModel.cs" t="Include" />
+            <e p="Protector" t="Include">
+              <e p="AIConfig.cs" t="Include" />
+              <e p="AIPatrolPath.cs" t="Include" />
+              <e p="EnemyProtectorController.cs" t="Include" />
+              <e p="IProtector.cs" t="Include" />
+              <e p="LevelObjectTrigger.cs" t="Include" />
+              <e p="PatrolAIModel.cs" t="Include" />
+              <e p="ProtectedZone.cs" t="Include" />
+              <e p="ProtectorAI.cs" t="Include" />
+            </e>
+            <e p="SimplePatrol" t="Include">
+              <e p="EnemySimpleController.cs" t="Include" />
+              <e p="SimplePatrolAI.cs" t="Include" />
+              <e p="SimplePatrolAIModel.cs" t="Include" />
+            </e>
+            <e p="Stalker" t="Include">
+              <e p="EnemyStalkerController.cs" t="Include" />
+              <e p="StalkerAI.cs" t="Include" />
+              <e p="StalkerAIModel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="GenerateLevel" t="Include">
+            <e p="Generator" t="Include">
+              <e p="DrawTilesManager.cs" t="Include" />
+              <e p="DungeonTiles.cs" t="Include" />
+              <e p="GenerateLevelView.cs" t="Include" />
+              <e p="GeneratorLevelController.cs" t="Include" />
+              <e p="GrassTileManager.cs" t="Include" />
+              <e p="MapGenerator.cs" t="Include" />
+              <e p="PlatformTileManager.cs" t="Include" />
+              <e p="TileManager.cs" t="Include" />
+              <e p="WaterTileManager.cs" t="Include" />
+            </e>
+            <e p="MarchingSquares" t="Include">
+              <e p="ControlNode.cs" t="Include" />
+              <e p="MarchingSquaresGeneratorLevel.cs" t="Include" />
+              <e p="Node.cs" t="Include" />
+              <e p="Square.cs" t="Include" />
+              <e p="SquareGrid.cs" t="Include" />
+            </e>
           </e>
           <e p="Interfaces" t="Include">
             <e p="ICamera.cs" t="Include" />
@@ -280,7 +315,6 @@
             <e p="IWinState.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
-            <e p="IPlayerFactory.cs" t="Include" />
             <e p="PlayerAnimation.cs" t="Include" />
             <e p="PlayerAttack.cs" t="Include" />
             <e p="PlayerFactory.cs" t="Include" />
@@ -300,7 +334,8 @@
           <e p="UniversalFactory" t="Include">
             <e p="Factory.cs" t="Include" />
             <e p="IFactory.cs" t="Include" />
-            <e p="InitializeObject.cs" t="Include" />
+            <e p="InitializeCharacter.cs" t="Include" />
+            <e p="InitializeItem.cs" t="Include" />
             <e p="Pool.cs" t="Include" />
           </e>
           <e p="UserInput" t="Include">

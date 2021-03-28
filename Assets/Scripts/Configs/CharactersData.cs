@@ -8,13 +8,15 @@ namespace Platformer
     {
         [SerializeField] private string _playerConfigPath = "PlayerConfig";
         [SerializeField] private string _redSpotCnfPath;
-        [SerializeField] private string _snailCnfPath;
+        [SerializeField] private string _snailCnfPath = "SnailEnemyCnf";
+        [SerializeField] private string _slugCnfPath  = "SlugEnemyConfig";
         [SerializeField] private string _batEnemyCnfPath;
         [SerializeField] private string _evilBatEnemyCnfPath;
 
         private PlayerConfig _playerConfig;
         private PlayerConfig _redSpotCnf;
-        private PlayerConfig _snailCnf;
+        private EnemyConfig _snailCnf;
+        private EnemyConfig _slugEnemyCnf;
         private EnemyConfig _batEnemyCnf;
         private EnemyConfig _evilBatEnemyCnf;
 
@@ -44,16 +46,29 @@ namespace Platformer
             }
         }
 
-        public PlayerConfig SnailCnf
+        public EnemyConfig SnailEnemyCnf
         {
             get
             {
                 if (_snailCnf == null)
                 {
-                    _snailCnf = Load<PlayerConfig>("Characters/" + _snailCnfPath);
+                    _snailCnf = Load<EnemyConfig>("Characters/" + _snailCnfPath);
                 }
 
                 return _snailCnf;
+            }
+        }
+        
+        public EnemyConfig SlugEnemyCnf
+        {
+            get
+            {
+                if (_slugEnemyCnf == null)
+                {
+                    _slugEnemyCnf = Load<EnemyConfig>("Characters/" + _slugCnfPath);
+                }
+
+                return _slugEnemyCnf;
             }
         }
 

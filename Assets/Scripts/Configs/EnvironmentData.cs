@@ -5,15 +5,15 @@ namespace Platformer
     [CreateAssetMenu(fileName = "EnvironmentData", menuName = "Configs/EnvironmentData", order = 0)]
     internal class EnvironmentData : ScriptableObject
     {
-        [SerializeField] private string _coinCnfPath;
-        [SerializeField] private string _rocketCnfPath;
         [SerializeField] private string _backgroundCnfPath;
+        [SerializeField] private string _levelConfigPath;
         [SerializeField] private string _cannonCnfPath;
+        [SerializeField] private string _coinCnfPath;
 
-        private ItemConfig _coinCnf;
-        private ItemConfig _rocketCnf;
         private BackGroundConfig[] _backgroundCnf;
         private CannonConfig _cannonConfig;
+        private LevelConfig _levelConfig;
+        private ItemConfig _coinCnf;
 
         public ItemConfig CoinCnf
         {
@@ -27,20 +27,20 @@ namespace Platformer
                 return _coinCnf;
             }
         }
-
-        public ItemConfig RocketCnf
+        
+        public LevelConfig LevelConfig
         {
             get
             {
-                if (_rocketCnf == null)
+                if (_levelConfig == null)
                 {
-                    _rocketCnf = Extentions.Load<ItemConfig>("Items/" + _rocketCnfPath);
+                    _levelConfig = Extentions.Load<LevelConfig>(_levelConfigPath);
                 }
 
-                return _rocketCnf;
+                return _levelConfig;
             }
         }
-        
+
         public CannonConfig CannonConfig
         {
             get

@@ -9,7 +9,7 @@
             _factory = factory;
         }
 
-        public ParalaxBackGround GetParalaxBackGround()
+        public ParallaxBackGround GetParalaxBackGround()
         {
             return _factory.Create();
         }

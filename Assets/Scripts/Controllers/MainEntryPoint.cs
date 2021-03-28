@@ -17,7 +17,7 @@ namespace Platformer
         {
             var player = new PlayerInitialization(new PlayerFactory(_charactersData.PlayerConfig));
             var cameraController = new CameraController(player.Transform);
-            var paralaxController = new ParalaxController(cameraController, _environmentData.BackGroundConfig);
+            var parallaxController = new ParallaxController(cameraController, _environmentData.BackGroundConfig);
             var inputInitialization = new InputInitialization();
             var playerStateController = new PlayerStateController(player, _charactersData.PlayerConfig,
                 inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput());
@@ -30,16 +30,21 @@ namespace Platformer
 
             _controllers = new Controllers();
             _controllers.Add(cameraController);
-            _controllers.Add(paralaxController);
+            _controllers.Add(parallaxController);
             _controllers.Add(new InputController(inputInitialization.GetMoveInput(),
                 inputInitialization.GetAttackInput()));
             _controllers.Add(playerStateController);
             _controllers.Add(new TimeRemainingController());
-            _controllers.Add(new CoinPlaceController(paralaxController.CoinsPlaces, _environmentData.CoinCnf,
+            _controllers.Add(new CoinPlaceController(parallaxController.CoinsPlaces, _environmentData.CoinCnf,
                 cameraController));
-            _controllers.Add(new LevelCompleteManager(player.Transform, paralaxController.DeathZones, _finishPoint,
+            _controllers.Add(new LevelCompleteManager(player.Transform, parallaxController.DeathZones, _finishPoint,
                 playerStateController));
-            
+
+            _controllers.Add(new EnemySimpleController(_charactersData.SnailEnemyCnf));
+            _controllers.Add(new EnemySimpleController(_charactersData.SlugEnemyCnf));
+            _controllers.Add(new EnemyStalkerController(_charactersData.BatEnemyCnf, player.Transform));
+            _controllers.Add(new EnemyProtectorController(_charactersData.EvilBatEnemyCnf, player.Transform));
+
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);
             _controllers.Add(bridge);

@@ -2,7 +2,7 @@
 
 namespace Platformer
 {
-    internal class PlayerFactory : IPlayerFactory
+    internal class PlayerFactory : IFactory
     {
         private readonly PlayerConfig _config;
 

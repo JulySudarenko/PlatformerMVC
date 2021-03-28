@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7241512db434978ae90fc3683ac7d66, type: 3}
   m_Name: CharactersData
   m_EditorClassIdentifier: 
+  _playerConfigPath: PlayerConfig
   _redSpotCnfPath: RedSpotCnf
-  _snailCnfPath: SnailCnf
+  _snailCnfPath: SnailEnemyCnf
+  _slugCnfPath: SlugEnemyConfig
   _batEnemyCnfPath: BatEnemyCnf
   _evilBatEnemyCnfPath: EvilBatEnemyCnf
-  _coinCnfPath: CoinCnf
-  _rocketCnfPath: RocketCnf
-  _backgroundCnfPath: BackGroundCnf

@@ -15,14 +15,14 @@ namespace Platformer
             _camera = camera;
         }
 
-        public ParalaxBackGround Create()
+        public ParallaxBackGround Create()
         {
             var back = Object.Instantiate(_config.BackGround, _parentRoot.transform);
 
             back = _config.IsPlaceChanging ? ChangePosition(back, _config.SizeCoefficient) : 
                    _config.IsSizeChanging ? ChangeSize(back, _config.SizeCoefficient) : back;
             
-            return new ParalaxBackGround(_camera, back.transform, _config);
+            return new ParallaxBackGround(_camera, back.transform, _config);
         }
 
         private GameObject ChangePosition(GameObject back, float delta)

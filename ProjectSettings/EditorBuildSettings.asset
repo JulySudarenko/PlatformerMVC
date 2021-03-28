@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlatformLevel.unity
     guid: 76b642a07beecc14fb84fa956ccbc498
+  - enabled: 1
+    path: Assets/Scenes/TilemapLevel.unity
+    guid: 3923b9913eb2bd349a5eea365a89b456
   m_configObjects: {}

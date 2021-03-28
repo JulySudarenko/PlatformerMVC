@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed6cf4e6ea3344f1b45d09f07771f0fa, type: 3}
   m_Name: EvilBatEnemyCnf
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 0}
-  _enemySpeed: 0
-  _enemyPower: 0
+  EnemySimplePrefab: {fileID: 889349762928748648, guid: 5663f84deccd5df44b9dd509caf8a2fd,
+    type: 3}
+  ProtectedZone: {fileID: 4801739887207519440, guid: 02b232f03ccbfdf49bec3a57e4d28821,
+    type: 3}
+  _enemyAnimeCnfPath: AnimEvilBatEnemyCnf
+  _wayPoints:
+  - {fileID: 2268274849522029639, guid: 9a0539f00f898fe4683795befee5b165, type: 3}
+  - {fileID: 5738583438712608970, guid: 4a22e459d0ef9764eb0bee78bffb4f60, type: 3}
+  - {fileID: 1519575046876623937, guid: f7e32c2905e968d4f9d32e9c423a32e4, type: 3}
+  _enemySpeed: 20
+  _enemyAnimationSpeed: 10
+  _enemyPower: 10
+  _minDistanceToTarget: 1

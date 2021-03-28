@@ -12,7 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed6cf4e6ea3344f1b45d09f07771f0fa, type: 3}
   m_Name: BatEnemyCnf
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 2510997246311213837, guid: 27664219952e7b44eb9c2d7f99c27d16,
+  EnemySimplePrefab: {fileID: 2177490602711771757, guid: 27664219952e7b44eb9c2d7f99c27d16,
     type: 3}
-  _enemySpeed: 15
-  _enemyPower: 1
+  ProtectedZone: {fileID: 2522097309237274951, guid: 0907399230378664fb821e491a39abf0,
+    type: 3}
+  _enemyAnimeCnfPath: AnimBatEnemyCnf
+  _wayPoints:
+  - {fileID: 1191855978508514151, guid: ecc52daf161f78b488ecfd520243031f, type: 3}
+  - {fileID: 7512748796537535133, guid: de6508bfabb273147b3d0128cb21f3fc, type: 3}
+  - {fileID: 3109896269326793240, guid: 7b5e601452f09ec49bb3993bce896bf9, type: 3}
+  _enemySpeed: 10
+  _enemyAnimationSpeed: 10
+  _enemyPower: 5
+  _minDistanceToTarget: 0.5

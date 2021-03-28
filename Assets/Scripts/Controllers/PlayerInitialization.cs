@@ -10,7 +10,7 @@ namespace Platformer
         public readonly Collider2D Collider;
         private readonly GameObject _player;
 
-        public PlayerInitialization(IPlayerFactory factory)
+        public PlayerInitialization(IFactory factory)
         {
             _player = factory.Create();
             Transform = _player.transform;

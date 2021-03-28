@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6cf4e6ea3344f1b45d09f07771f0fa, type: 3}
+  m_Name: SnailEnemyCnf
+  m_EditorClassIdentifier: 
+  EnemySimplePrefab: {fileID: 1987787265591218, guid: 18d026e25cf494d47a4368183218e627,
+    type: 3}
+  ProtectedZone: {fileID: 0}
+  _enemyAnimeCnfPath: AnimSnailCnf
+  _wayPoints:
+  - {fileID: 2384967550330521015, guid: d6dd97a72247d2b4eacbb8053773015b, type: 3}
+  - {fileID: 5458344479855500305, guid: c9184c1b10ca9e6429a786656118b486, type: 3}
+  - {fileID: 1134384718832361835, guid: 175d875db44f8f848b2a8462f5653f89, type: 3}
+  - {fileID: 5052014699652670597, guid: 5be0db292dbaec34aa98ffdc5c363d43, type: 3}
+  - {fileID: 4409035016479462715, guid: 862312ad45b98194984cd7d935ab3bc9, type: 3}
+  - {fileID: 1065600832389742787, guid: d5868c97a02053f459a8791f4b9197ff, type: 3}
+  - {fileID: 6529219885292752683, guid: c3c487c09aba7f246a19dbcfa39aa2c5, type: 3}
+  - {fileID: 6391150725311720929, guid: d6127307127987a4b9e380e6b5c17b22, type: 3}
+  _enemySpeed: 10
+  _enemyAnimationSpeed: 10
+  _enemyPower: 1
+  _minDistanceToTarget: 1

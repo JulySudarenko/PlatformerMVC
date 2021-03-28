@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Platformer
 {
@@ -42,8 +43,9 @@ namespace Platformer
         {
             if (contactView.name == NameManager.PLAYER_NAME)
             {
-                _state.IsWinState();
-                DeactivatePlayer();
+                SceneManager.LoadScene(1);
+                // _state.IsWinState();
+                // DeactivatePlayer();
             }
         }
 

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6cf4e6ea3344f1b45d09f07771f0fa, type: 3}
+  m_Name: SlugEnemyConfig
+  m_EditorClassIdentifier: 
+  EnemySimplePrefab: {fileID: 1987787265591218, guid: 18d026e25cf494d47a4368183218e627,
+    type: 3}
+  ProtectedZone: {fileID: 0}
+  _enemyAnimeCnfPath: AnimSnailCnf
+  _wayPoints:
+  - {fileID: 5030653977433908445, guid: 4f6ac373d472ad549af7f129f5ed15ae, type: 3}
+  - {fileID: 3710910342457250579, guid: 38b9040756e4d7a41ac3877e01aa96d4, type: 3}
+  - {fileID: 5718032752355515364, guid: f2a0668e05404d84a8981ab185043b85, type: 3}
+  - {fileID: 1785907904651875265, guid: ec993e97e8c7c794781eb795287410f6, type: 3}
+  - {fileID: 2211967589152796292, guid: c36e3dda593942e4d8d6eba5973fbaa1, type: 3}
+  - {fileID: 8386045994337699634, guid: 8a31e2ede7fa5d14482eec269a98742e, type: 3}
+  _enemySpeed: 13
+  _enemyAnimationSpeed: 10
+  _enemyPower: 1
+  _minDistanceToTarget: 1

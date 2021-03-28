@@ -7,13 +7,13 @@ namespace Platformer
     internal class Pool
     {
         private readonly List<Transform> _pool;
-        private readonly InitializeObject _initializeObject;
+        private readonly InitializeItem _initializeItem;
         private readonly Transform _rootPool;
         private readonly int _capacityPool;
 
         public Pool(IFactory factory, int poolSize, string poolName)
         {
-            _initializeObject = new InitializeObject(factory);
+            _initializeItem = new InitializeItem(factory);
             _capacityPool = poolSize;
             _pool = new List<Transform>();
             if (!_rootPool)
@@ -29,7 +29,7 @@ namespace Platformer
             {
                 for (var i = 0; i < _capacityPool; i++)
                 {
-                    var instantiate = _initializeObject.Create();
+                    var instantiate = _initializeItem.Create();
                     ReturnToPool(instantiate.transform);
                     _pool.Add(instantiate.transform);
                 }

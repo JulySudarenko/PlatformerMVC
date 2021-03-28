@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed6cf4e6ea3344f1b45d09f07771f0fa, type: 3}
   m_Name: BatEnemyCnf
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 0}
-  _enemySpeed: 0
-  _enemyPower: 0
+  EnemyPrefab: {fileID: 2510997246311213837, guid: 27664219952e7b44eb9c2d7f99c27d16,
+    type: 3}
+  _enemySpeed: 15
+  _enemyPower: 1

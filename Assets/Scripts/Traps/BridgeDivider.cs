@@ -9,11 +9,13 @@ namespace Platformer
         private Transform _bridge;
         private TriggerContacts _contacts;
         private int _contactCounter = 0;
-        private int _breakBridgeContact = 3;
+        private int _breakBridgeContact = 2;
+        private bool _hasDestroyed;
 
         public BridgeDivider(GameObject bridge)
         {
             _bridge = bridge.transform;
+            _hasDestroyed = false;
             _joints = new List<DistanceJoint2D>();
             _contacts = bridge.GetOrAddComponent<TriggerContacts>();
             _contacts.IsContact += CountContacts;
@@ -48,9 +50,14 @@ namespace Platformer
 
         public void Execute(float deltaTime)
         {
-            if (_contactCounter > _breakBridgeContact)
-                BreakBridge();
-
+            if (!_hasDestroyed)
+            {
+                if (_contactCounter > _breakBridgeContact)
+                {
+                    BreakBridge();
+                    _hasDestroyed = true;
+                }
+            }
         }
 
         public void Cleanup()

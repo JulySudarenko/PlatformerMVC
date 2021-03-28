@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081905169189597920}
   - component: {fileID: 3704106032428903136}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: flat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4386964747972222541}
   - component: {fileID: 5800663813392638795}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asset 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 505260842969058678}
   - component: {fileID: 3196903535303562441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asset 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5590728795255909240}
   - component: {fileID: 7802928049602650525}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asset 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5334662567791427855}
   - component: {fileID: 5334662567791427848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: flat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5334662567987661665}
   - component: {fileID: 5334662567987661666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asset 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4409099198390246795}
   - component: {fileID: 8411776797793988025}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flower-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 963736810110115853}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlatformsSecond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -610,7 +610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8470853240907670077}
   - component: {fileID: 8627595114664004370}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mushroom_0000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5486636876992465873}
   - component: {fileID: 1399329139044786935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flower-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -769,10 +769,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963736810110115853}
     m_Modifications:
+    - target: {fileID: 444780735391372605, guid: c7d8c633956163e45b5b07c3b97116a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019478043775273629, guid: c7d8c633956163e45b5b07c3b97116a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1592285917352334140, guid: c7d8c633956163e45b5b07c3b97116a1,
         type: 3}
       propertyPath: m_Name
       value: VeryBigPlatform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592285917352334140, guid: c7d8c633956163e45b5b07c3b97116a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306495671564576994, guid: c7d8c633956163e45b5b07c3b97116a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4206337674003714712, guid: c7d8c633956163e45b5b07c3b97116a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335197024726216663, guid: c7d8c633956163e45b5b07c3b97116a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6376946775246357934, guid: c7d8c633956163e45b5b07c3b97116a1,
         type: 3}
@@ -829,6 +859,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7751980591860007547, guid: c7d8c633956163e45b5b07c3b97116a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7d8c633956163e45b5b07c3b97116a1, type: 3}
 --- !u!4 &8608439374950363705 stripped
@@ -844,6 +879,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963736810110115853}
     m_Modifications:
+    - target: {fileID: 650028525975711746, guid: 7914f403c78143f4197999effb95bdd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 700996956413120907, guid: 7914f403c78143f4197999effb95bdd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436714141574928097, guid: 7914f403c78143f4197999effb95bdd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7139485559170941257, guid: 7914f403c78143f4197999effb95bdd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -903,6 +953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SmallPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330651692830197511, guid: 7914f403c78143f4197999effb95bdd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7914f403c78143f4197999effb95bdd0, type: 3}

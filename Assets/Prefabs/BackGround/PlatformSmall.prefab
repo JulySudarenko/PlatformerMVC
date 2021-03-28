@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915562083098384499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlatformSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744310449779548493}
   - component: {fileID: 7357220858263304303}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mushroom_0000 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6454746408967128149}
   - component: {fileID: 6454746408967128148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asset 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2440173218283950463}
   - component: {fileID: 877220041463627434}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asset 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8440754071972362184}
   - component: {fileID: 8440754071972362191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mushroom_0000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8440754072084735316}
   - component: {fileID: 8440754072084735323}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asset 7 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8440754073871667811}
   - component: {fileID: 8440754073871667810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asset 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,6 +591,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1915562083098384499}
     m_Modifications:
+    - target: {fileID: 650028525975711746, guid: 7914f403c78143f4197999effb95bdd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 700996956413120907, guid: 7914f403c78143f4197999effb95bdd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436714141574928097, guid: 7914f403c78143f4197999effb95bdd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2075867720121985494, guid: 7914f403c78143f4197999effb95bdd0,
         type: 3}
       propertyPath: m_UsedByEffector
@@ -661,6 +676,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8330651692830197511, guid: 7914f403c78143f4197999effb95bdd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7914f403c78143f4197999effb95bdd0, type: 3}
 --- !u!1 &3030841438712104523 stripped
@@ -686,6 +706,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VerySmallPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 353464111183515667, guid: 3046991a95958d74baebc35449c17760,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719159527890072650, guid: 3046991a95958d74baebc35449c17760,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338925926894206348, guid: 3046991a95958d74baebc35449c17760,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4382857971450626390, guid: 3046991a95958d74baebc35449c17760,
         type: 3}

@@ -6,8 +6,8 @@ namespace Level
     internal class PlatformTileManager : TileManager
     {
         private readonly int _waterLevel;
-        private readonly int _maxJumpPlace = 4;
         private readonly int _cleanSize = 2;
+        private readonly int _maxJumpPlace = 4;
         private int _obstacleCounter;
 
         private int[,] _map;
@@ -34,6 +34,7 @@ namespace Level
                         _obstacleCounter++;
                         if (_obstacleCounter > _maxJumpPlace)
                         {
+                            _obstacleCounter -= _maxJumpPlace;
                             AddPlatform(x);
                         }
                     }
@@ -54,7 +55,7 @@ namespace Level
             int newY = _waterLevel + Random.Range(3, 5);
             var size = Random.Range(2, 5);
 
-            _obstacleCounter -= size;
+            _obstacleCounter -= size + 1;
 
             _map[newX, newY] = (int) LeftPlatform;
             _map[newX + size, newY] = (int) RightPlatform;

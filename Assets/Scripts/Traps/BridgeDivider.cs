@@ -10,20 +10,22 @@ namespace Platformer
         private TriggerContacts _contacts;
         private int _contactCounter = 0;
         private int _breakBridgeContact = 2;
+        private readonly int _contactID;
         private bool _hasDestroyed;
 
-        public BridgeDivider(GameObject bridge)
+        public BridgeDivider(GameObject bridge, int contactID)
         {
             _bridge = bridge.transform;
             _hasDestroyed = false;
+            _contactID = contactID;
             _joints = new List<DistanceJoint2D>();
             _contacts = bridge.GetOrAddComponent<TriggerContacts>();
             _contacts.IsContact += CountContacts;
         }
 
-        private void CountContacts(GameObject gameObject, GameObject contactObject)
+        private void CountContacts(int contactID)
         {
-            if (contactObject.name == NameManager.PLAYER_NAME)
+            if (contactID == _contactID)
             {
                 _contactCounter++;
             }

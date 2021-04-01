@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using PlatformerMVC;
+using UnityEngine;
 
 namespace Platformer
 {
@@ -6,12 +7,17 @@ namespace Platformer
     {
         [SerializeField] private CharactersData _charactersData;
         [SerializeField] private EnvironmentData _environmentData;
-        private Controllers _controllers;
 
         [SerializeField] private CannonView _cannon;
         [SerializeField] private GameObject _mace;
         [SerializeField] private GameObject _bridge;
         [SerializeField] private TriggerContacts _finishPoint;
+
+        [Header("Quest")] [SerializeField] private QuestObjectView _singleQuestView;
+        [SerializeField] private QuestStoryConfig[] _questStoryConfigs;
+        [SerializeField] private QuestObjectView[] _questObjects;
+
+        private Controllers _controllers;
 
         private void Awake()
         {
@@ -26,7 +32,9 @@ namespace Platformer
             var coreEmitter = new CoresEmitterController(_cannon.EmitterTransform, _cannon.TurretTransform,
                 _environmentData.CannonConfig);
             var mace = new MaceController(_mace);
-            var bridge = new BridgeDivider(_bridge);
+            var bridge = new BridgeDivider(_bridge, player.ID);
+            
+            var levelFinisher = new QuestStoryFinisher(_finishPoint);
 
             _controllers = new Controllers();
             _controllers.Add(cameraController);
@@ -36,9 +44,9 @@ namespace Platformer
             _controllers.Add(playerStateController);
             _controllers.Add(new TimeRemainingController());
             _controllers.Add(new CoinPlaceController(parallaxController.CoinsPlaces, _environmentData.CoinCnf,
-                cameraController));
+                cameraController, player.ID));
             _controllers.Add(new LevelCompleteManager(player.Transform, parallaxController.DeathZones, _finishPoint,
-                playerStateController));
+                playerStateController, player.ID));
 
             _controllers.Add(new EnemySimpleController(_charactersData.SnailEnemyCnf));
             _controllers.Add(new EnemySimpleController(_charactersData.SlugEnemyCnf));
@@ -48,6 +56,8 @@ namespace Platformer
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);
             _controllers.Add(bridge);
+            _controllers.Add(new QuestsConfigurator(_singleQuestView, _questStoryConfigs, _questObjects, levelFinisher,
+                player.ID));
         }
 
         private void Start()

@@ -9,11 +9,11 @@ namespace Platformer
         private Transform _coin;
         public bool IsActive;
 
-        public CoinController(Transform coin, ItemConfig config)
+        public CoinController(Transform coin, ItemConfig config, int contactID)
         {
             _coin = coin;
             _coinAnimation = new CoinAnimation(coin, config);
-            _coinListener = new CoinsListener(_coin.gameObject);
+            _coinListener = new CoinsListener(_coin.gameObject, contactID);
             _coinListener.CoinIsTaken += Activate;
             IsActive = false;
         }

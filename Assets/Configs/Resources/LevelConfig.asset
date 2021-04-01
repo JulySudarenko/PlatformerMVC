@@ -18,7 +18,8 @@ MonoBehaviour:
   _heightMap: 17
   _factorSmooth: 1
   _sideBorders: 13
-  _randomFillPercent: 35
+  _countWall: 4
+  _randomFillPercent: 30
   TileMapGround: {fileID: 1750338448135062165, guid: 963d1e28d1c864f4f9288f698e015ed9,
     type: 3}
   _tileGround: {fileID: 11400000, guid: 3f8eee110774a2b448e9eb7826eea495, type: 2}
@@ -26,6 +27,7 @@ MonoBehaviour:
   TileMapWater: {fileID: 4110257087078335042, guid: c0e89bb6341f26546a41c827d474312b,
     type: 3}
   _tileWater: {fileID: 11400000, guid: 3afde7c1a55cb1e48af9cfaa83e9f8b8, type: 2}
+  _waterLevel: 2
   TileMapPlatforms: {fileID: 4730789949200884505, guid: f4f1052668e8ca342a82fe5c816d0d81,
     type: 3}
   _tileLeftPlatform: {fileID: 11400000, guid: e804c2b0183d7c34abbcacf71f9b794f, type: 2}

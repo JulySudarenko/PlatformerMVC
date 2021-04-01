@@ -8,6 +8,7 @@ namespace Platformer
         public readonly SpriteRenderer SpriteRenderer;
         public readonly Rigidbody2D Rigidbody;
         public readonly Collider2D Collider;
+        public readonly int ID;
         private readonly GameObject _player;
 
         public PlayerInitialization(IFactory factory)
@@ -17,6 +18,7 @@ namespace Platformer
             SpriteRenderer = _player.GetComponentInChildren<SpriteRenderer>();
             Collider = _player.GetOrAddComponent<Collider2D>();
             Rigidbody = _player.GetOrAddComponent<Rigidbody2D>();
+            ID = _player.GetInstanceID();
         }
     }
 }

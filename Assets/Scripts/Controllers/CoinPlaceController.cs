@@ -16,9 +16,10 @@ namespace Platformer
         private readonly float _startLevelPoint = -5f;
         private readonly float _finishLevelPoint = 100;
         private readonly int _countOnPlatform;
+        private readonly int _contactID;
         private float _controlPoint;
 
-        public CoinPlaceController(List<Transform> platforms, ItemConfig coinConfig, ICamera camera)
+        public CoinPlaceController(List<Transform> platforms, ItemConfig coinConfig, ICamera camera, int contactID)
         {
             _originalplaces = platforms;
             _coinsPool = new Pool(new Factory(coinConfig.ItemPrefab), coinConfig.ItemPoolSize, NameManager.COIN_ROOT);
@@ -27,6 +28,7 @@ namespace Platformer
             _countOnPlatform = coinConfig.ItemCount;
             _config = coinConfig;
             _camera = camera;
+            _contactID = contactID;
             _controlPoint = _camera.CameraTransform.position.x + _controlStep;
         }
 
@@ -62,7 +64,7 @@ namespace Platformer
                 var coinController = _coinControllers.FirstOrDefault(a => !a.IsActive);
                 if (coinController == null)
                 {
-                    coinController = new CoinController(_coinsPool.GetPoolObject(), _config);
+                    coinController = new CoinController(_coinsPool.GetPoolObject(), _config, _contactID);
                     _coinControllers.Add(coinController);
                 }
 

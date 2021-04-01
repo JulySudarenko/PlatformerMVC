@@ -245,6 +245,9 @@
             <e p="ItemConfig.cs" t="Include" />
             <e p="LevelConfig.cs" t="Include" />
             <e p="PlayerConfig.cs" t="Include" />
+            <e p="QuestConfig.cs" t="Include" />
+            <e p="QuestItemConfig.cs" t="Include" />
+            <e p="QuestStoryConfig.cs" t="Include" />
             <e p="SpriteAnimatorConfig.cs" t="Include" />
           </e>
           <e p="ContactProcessing" t="Include">
@@ -320,6 +323,21 @@
             <e p="PlayerFactory.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerState.cs" t="Include" />
+          </e>
+          <e p="Quest" t="Include">
+            <e p="Interfaces" t="Include">
+              <e p="IQuest.cs" t="Include" />
+              <e p="IQuestModel.cs" t="Include" />
+              <e p="IQuestStory.cs" t="Include" />
+              <e p="IQuestStoryFinisher.cs" t="Include" />
+            </e>
+            <e p="Quest.cs" t="Include" />
+            <e p="QuestObjectView.cs" t="Include" />
+            <e p="QuestsConfigurator.cs" t="Include" />
+            <e p="QuestStory.cs" t="Include" />
+            <e p="QuestStoryFinisher.cs" t="Include" />
+            <e p="ResettableQuestStory.cs" t="Include" />
+            <e p="SwitchQuestModel.cs" t="Include" />
           </e>
           <e p="TimeRemaining" t="Include">
             <e p="ITimeRemaining.cs" t="Include" />

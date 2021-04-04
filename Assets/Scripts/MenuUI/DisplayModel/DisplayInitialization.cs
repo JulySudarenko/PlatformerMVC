@@ -1,20 +1,25 @@
-﻿namespace Platformer
+﻿using UnityEngine;
+
+namespace Platformer
 {
     public class DisplayInitialization : IInitialize, IExecute, ICleanup
     {
         private readonly PlayerStateController _playerController;
+        private readonly CoinPlaceController _coinsController;
         private readonly MenuDisplayFactory _menuDisplayFactory;
         private readonly GameDisplayFactory _gameDisplayFactory;
         private DisplayCommand _displayCommand;
         private DisplayHealthPoints _healthPoints;
         private DisplayGamePoints _gamePoints;
 
-        public DisplayInitialization(UIData data, PlayerStateController playerController)
+        public DisplayInitialization(UIData data, PlayerStateController playerController, CoinPlaceController coinsController)
         {
             _menuDisplayFactory = new MenuDisplayFactory(data.MenuDisplayData, data.Canvas);
             _gameDisplayFactory = new GameDisplayFactory(data.GameDisplayData, data.Canvas);
             _playerController = playerController;
+            _coinsController = coinsController;
             _playerController.OnChangeHealth += ShowPlayerHealth;
+            _coinsController.OnCoinTaken += ShowGameScore;
         }
 
         public void Initialize()
@@ -36,6 +41,7 @@
 
         private void ShowGameScore(int points)
         {
+            Debug.Log(points);
             _gamePoints.ShowGamePoints(points);
         }
 
@@ -52,6 +58,7 @@
         public void Cleanup()
         {
             _playerController.OnChangeHealth -= ShowPlayerHealth;
+            _coinsController.OnCoinTaken -= ShowGameScore;
         }
     }
 }

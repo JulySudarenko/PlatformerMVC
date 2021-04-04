@@ -1,20 +1,20 @@
-﻿
-namespace Platformer
+﻿namespace Platformer
 {
     internal class EnemySimpleController : IInitialize, IFixedExecute
     {
-        private EnemyConfig _config;
+        private readonly EnemyConfig _config;
+        private readonly DamagingObjects _damagingObjects;
         private SimplePatrolAI _simplePatrolAI;
-        private AnimationData _animationData;
 
-        public EnemySimpleController(EnemyConfig config)
+        public EnemySimpleController(EnemyConfig config, DamagingObjects damagingObjects)
         {
             _config = config;
+            _damagingObjects = damagingObjects;
         }
-        
+
         public void Initialize()
         {
-            _simplePatrolAI = new SimplePatrolAI(_config, new SimplePatrolAIModel(_config));
+            _simplePatrolAI = new SimplePatrolAI(_config, new SimplePatrolAIModel(_config), _damagingObjects);
             _simplePatrolAI.Initialize();
         }
 

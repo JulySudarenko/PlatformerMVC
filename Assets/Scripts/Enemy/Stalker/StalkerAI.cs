@@ -9,6 +9,7 @@ namespace Platformer
         private readonly EnemyConfig _config;
         private readonly StalkerAIModel _model;
         private readonly Transform _target;
+        private readonly DamagingObjects _damagingObjects;
         private readonly Vector3 _right = new Vector3(-1, 1, 1);
         private readonly Vector3 _left = new Vector3(1, 1, 1);
         private ITimeRemaining _timeRemaining;
@@ -18,8 +19,9 @@ namespace Platformer
         private Vector2 _newVelocity;
 
 
-        public StalkerAI(EnemyConfig config, StalkerAIModel model, Transform target)
+        public StalkerAI(EnemyConfig config, StalkerAIModel model, Transform target, DamagingObjects damagingObjects)
         {
+            _damagingObjects = damagingObjects;
             _config = config != null ? config : throw new ArgumentNullException(nameof(config));
             _model = model != null ? model : throw new ArgumentNullException(nameof(model));
             _target = target != null ? target : throw new ArgumentNullException(nameof(target));
@@ -29,6 +31,7 @@ namespace Platformer
         {
             IFactory enemyFactory = new Factory(_config.EnemySimplePrefab);
             _enemy = new InitializeCharacter(enemyFactory);
+            _damagingObjects.AddDamagingObject(_enemy.ID);
             _enemy.Transform.position = _config.WayPoints[0].position;
             _animator = new SpriteAnimator(_config.EnemyAnimatorCnf);
             _animator.StartAnimation(_enemy.SpriteRenderer, AnimState.Run, true, _config.EnemyAnimationSpeed);

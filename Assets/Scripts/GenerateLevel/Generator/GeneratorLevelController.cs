@@ -1,4 +1,5 @@
-﻿using Platformer;
+﻿using System.Collections.Generic;
+using Platformer;
 using UnityEngine;
 
 namespace Level
@@ -35,5 +36,9 @@ namespace Level
             _drawTilesManager.DrawTilesOnMap(_map);
         }
 
+        public List<TriggerContacts> AddDeathZone()
+        {
+            return _drawTilesManager.GetDeathZones();
+        }
     }
 }

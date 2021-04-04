@@ -33,7 +33,9 @@ namespace Platformer
             var inputInitialization = new InputInitialization();
             var playerStateController = new PlayerStateController(player, _charactersData.PlayerConfig,
                 inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput(), damagingObjects.AllDamagingObjects);
-            var displayInitialization = new DisplayInitialization(_uiData, playerStateController);
+            var coinController = new CoinPlaceController(parallaxController.CoinsPlaces, _environmentData.CoinCnf,
+                cameraController, player.ID);
+            var displayInitialization = new DisplayInitialization(_uiData, playerStateController, coinController);
             
             var cannon = new AimingCannonController(_cannon.TurretTransform, player.Transform);
             var coreEmitter = new CoresEmitterController(_cannon.EmitterTransform, _cannon.TurretTransform,
@@ -48,20 +50,20 @@ namespace Platformer
             _controllers = new Controllers();
             _controllers.Add(cameraController);
             _controllers.Add(parallaxController);
+            _controllers.Add(displayInitialization);
             _controllers.Add(new InputController(inputInitialization.GetMoveInput(),
                 inputInitialization.GetAttackInput()));
             _controllers.Add(playerStateController);
             _controllers.Add(new TimeRemainingController());
-            _controllers.Add(new CoinPlaceController(parallaxController.CoinsPlaces, _environmentData.CoinCnf,
-                cameraController, player.ID));
+            _controllers.Add(coinController);
             _controllers.Add(new LevelCompleteManager(player.Transform, parallaxController.DeathZones, _finishPoint,
                 playerStateController, player.ID));
-            _controllers.Add(displayInitialization);
 
-            _controllers.Add(new EnemySimpleController(_charactersData.SnailEnemyCnf));
-            _controllers.Add(new EnemySimpleController(_charactersData.SlugEnemyCnf));
-            _controllers.Add(new EnemyStalkerController(_charactersData.BatEnemyCnf, player.Transform));
-            _controllers.Add(new EnemyProtectorController(_charactersData.EvilBatEnemyCnf, player.Transform));
+
+            _controllers.Add(new EnemySimpleController(_charactersData.SnailEnemyCnf, damagingObjects));
+            _controllers.Add(new EnemySimpleController(_charactersData.SlugEnemyCnf, damagingObjects));
+            _controllers.Add(new EnemyStalkerController(_charactersData.BatEnemyCnf, player.Transform, damagingObjects));
+            _controllers.Add(new EnemyProtectorController(_charactersData.EvilBatEnemyCnf, player.Transform, damagingObjects));
 
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);

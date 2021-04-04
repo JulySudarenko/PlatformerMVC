@@ -8,6 +8,7 @@ namespace Platformer
         [SerializeField] private GenerateLevelView _levelView;
         [SerializeField] private CharactersData _charactersData;
         [SerializeField] private EnvironmentData _environmentData;
+        [SerializeField] private TriggerContacts _finishPoint;
         private Controllers _controllers;
 
         private GeneratorLevelController _levelGenerator;
@@ -30,6 +31,8 @@ namespace Platformer
                 inputInitialization.GetAttackInput()));
             _controllers.Add(playerStateController);
             _controllers.Add(new TimeRemainingController());
+            _controllers.Add(new LevelCompleteManager(player.Transform, _levelGenerator.AddDeathZone(), _finishPoint,
+                playerStateController, player.ID));
             
             _controllers.Initialize();
         }

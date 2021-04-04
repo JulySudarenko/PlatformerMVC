@@ -8,15 +8,16 @@ namespace Platformer
         public readonly SpriteRenderer SpriteRenderer;
         public readonly Rigidbody2D Rigidbody;
         public readonly Collider2D Collider;
-        private readonly GameObject _enemy;
+        public readonly int ID;
 
         public InitializeCharacter(IFactory factory)
         {
-            _enemy = factory.Create();
-            Transform = _enemy.transform;
-            SpriteRenderer = _enemy.GetComponentInChildren<SpriteRenderer>();
-            Collider = _enemy.GetOrAddComponent<Collider2D>();
-            Rigidbody = _enemy.GetOrAddComponent<Rigidbody2D>();
+            var enemy = factory.Create();
+            Transform = enemy.transform;
+            SpriteRenderer = enemy.GetComponentInChildren<SpriteRenderer>();
+            Collider = enemy.GetOrAddComponent<Collider2D>();
+            Rigidbody = enemy.GetOrAddComponent<Rigidbody2D>();
+            ID = enemy.GetInstanceID();
         }
     }
 }

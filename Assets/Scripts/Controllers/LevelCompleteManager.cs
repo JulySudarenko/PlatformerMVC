@@ -75,6 +75,7 @@ namespace Platformer
             }
 
             _winZone.IsContact -= OnWinZoneContact;
+            _timeRemaining.RemoveTimeRemaining();
         }
     }
 }

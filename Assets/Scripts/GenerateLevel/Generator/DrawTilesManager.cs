@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using Platformer;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using static Level.DungeonTiles;
+using static Platformer.BuildAssistant;
 using Object = UnityEngine.Object;
 
 namespace Level
@@ -22,7 +24,9 @@ namespace Level
         private readonly int _sideBorders;
         private readonly int _widthMap;
         private readonly int _heightMap;
-        
+
+        private List<TriggerContacts> _deathZones;
+
         private Grid _grid;
         private Tilemap _tileMapGround;
         private Tilemap _tileMapWater;
@@ -30,7 +34,7 @@ namespace Level
 
         public DrawTilesManager(LevelConfig config, Vector3 playerStartPoint)
         {
-            _config = config  != null ? config : throw new ArgumentException(nameof(config));
+            _config = config != null ? config : throw new ArgumentException(nameof(config));
             _tileMapGround = config.TileMapGround;
             _tileGround = config.TileGround;
             _tileMapPlatforms = config.TileMapPlatforms;
@@ -93,7 +97,7 @@ namespace Level
                             _tileMapPlatforms.SetTile(positionTile, _tileRightPlatform);
                             break;
                         default:
-                            throw new ArgumentOutOfRangeException(nameof(DungeonTiles), map[x, y], 
+                            throw new ArgumentOutOfRangeException(nameof(DungeonTiles), map[x, y],
                                 "Not included in the program");
                     }
                 }
@@ -106,6 +110,16 @@ namespace Level
                    positionTile.x > _playerStartPosition.x - 3 &&
                    positionTile.y > -3 &&
                    positionTile.y < _playerStartPosition.y + 5;
+        }
+
+        public List<TriggerContacts> GetDeathZones()
+        {
+            _deathZones = new List<TriggerContacts>();
+
+            var deathZone = _tileMapWater.gameObject.GetOrAddComponent<TriggerContacts>();
+            _deathZones.Add(deathZone);
+
+            return _deathZones;
         }
     }
 }

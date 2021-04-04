@@ -3,7 +3,7 @@ using static Platformer.TimeRemainingExtensions;
 
 namespace Platformer
 {
-    public sealed class TimeRemainingController : IExecute
+    public sealed class TimeRemainingController : IExecute, ICleanup
     {
         private readonly List<ITimeRemaining> _timeRemainings;
 
@@ -30,6 +30,13 @@ namespace Platformer
                         obj.CurrentTime = obj.Time;
                     }
                 }
+            }
+        }
+        public void Cleanup()
+        {
+            for (var i = 0; i < _timeRemainings.Count; i++)
+            {
+                _timeRemainings[i].RemoveTimeRemaining();
             }
         }
     }

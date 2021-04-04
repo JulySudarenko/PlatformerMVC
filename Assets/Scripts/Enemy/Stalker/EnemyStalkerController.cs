@@ -6,17 +6,19 @@ namespace Platformer
     { 
         private readonly EnemyConfig _config;
         private readonly Transform _stalkerAITarget;
+        private readonly DamagingObjects _damagingObjects;
         private StalkerAI _stalkerAI;
         
-        public EnemyStalkerController(EnemyConfig config, Transform target)
+        public EnemyStalkerController(EnemyConfig config, Transform target, DamagingObjects damagingObjects)
         {
             _config = config;
             _stalkerAITarget = target;
+            _damagingObjects = damagingObjects;
         }
         
         public void Initialize()
         {
-            _stalkerAI = new StalkerAI(_config, new StalkerAIModel(_config), _stalkerAITarget);
+            _stalkerAI = new StalkerAI(_config, new StalkerAIModel(_config), _stalkerAITarget, _damagingObjects);
             _stalkerAI.Initialize();
         }
 

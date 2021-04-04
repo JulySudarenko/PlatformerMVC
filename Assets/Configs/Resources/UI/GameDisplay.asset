@@ -15,4 +15,4 @@ MonoBehaviour:
   GamePanel: {fileID: 81824072825372537, guid: 8a896b6578b41af45ae526baeaae703f, type: 3}
   GamePoints: {fileID: 629081359464654650, guid: b3bb98d4818042049a6af9cd313f6184,
     type: 3}
-  Hearts: {fileID: 6649099179273339291, guid: 8bac9b7f1bce16d4981b2edf425dfc9a, type: 3}
+  Hearts: {fileID: 6320371847850308752, guid: 5aede65f86f26ab4faf3c617208eb2a8, type: 3}

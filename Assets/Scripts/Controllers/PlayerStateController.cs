@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Platformer
 {
-    public class PlayerStateController : IFixedExecute, ICleanup, IEndGameState
+    public class PlayerStateController : IInitialize, IFixedExecute, ICleanup, IEndGameState
     {
         public Action<int> OnChangeHealth;
         private Action<PlayerState> _onPlayerStateChange;
@@ -32,6 +32,11 @@ namespace Platformer
             _playerMovement.OnMoveStateChange += UpdateState;
             _playerAttack.OnAttackStateChange += UpdateState;
             _playerHealth.OnDamage += UpdateState;
+        }
+        
+        public void Initialize()
+        {
+            OnChangeHealth?.Invoke(_playerHealth.HealthCount);
         }
         
         public void FixedExecute(float deltaTime)
@@ -117,5 +122,6 @@ namespace Platformer
             _playerAttack.Cleanup();
             _playerHealth.Cleanup();
         }
+
     }
 }

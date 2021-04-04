@@ -11,7 +11,7 @@ namespace Platformer
         private readonly Transform _rootPool;
         private readonly int _capacityPool;
 
-        public Pool(IFactory factory, int poolSize, string poolName)
+        public Pool(IFactory factory, int poolSize, string poolName )
         {
             _initializeItem = new InitializeItem(factory);
             _capacityPool = poolSize;

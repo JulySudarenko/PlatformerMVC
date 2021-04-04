@@ -66,5 +66,10 @@ namespace Platformer
         {
             _enemy.Transform.localScale = _newVelocity.x > 0 ? _right : _left;
         }
+
+        public void Cleanup()
+        {
+            _timeRemaining.RemoveTimeRemaining();
+        }
     }
 }

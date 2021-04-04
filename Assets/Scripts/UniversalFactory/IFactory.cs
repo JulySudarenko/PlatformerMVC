@@ -2,7 +2,7 @@
 
 namespace Platformer
 {
-    internal interface IFactory
+    public interface IFactory
     {
         GameObject Create();
     }

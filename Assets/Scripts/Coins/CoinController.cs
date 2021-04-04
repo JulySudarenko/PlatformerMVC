@@ -4,10 +4,11 @@ namespace Platformer
 {
     internal class CoinController
     {
+        public bool IsActive;
+        
         private CoinAnimation _coinAnimation;
         private CoinsListener _coinListener;
         private Transform _coin;
-        public bool IsActive;
 
         public CoinController(Transform coin, ItemConfig config, int contactID)
         {
@@ -24,6 +25,7 @@ namespace Platformer
             _coin.position = _coin.position.Change(y: _coin.position.y + delta);
             _coin.gameObject.SetActive(flag);
             IsActive = flag;
+
         }
 
         public void Execute(float deltaTime)

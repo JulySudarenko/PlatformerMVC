@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 using Platformer;
 
-namespace PlatformerMVC
+namespace Platformer
 {
     public class QuestsConfigurator : IInitialize, ICleanup
     {

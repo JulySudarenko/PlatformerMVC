@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PlatformerMVC
+namespace Platformer
 {
     public sealed class Quest : IQuest
     {

@@ -1,7 +1,7 @@
 ﻿using Platformer;
 using UnityEngine;
 
-namespace PlatformerMVC
+namespace Platformer
 {
     public class QuestObjectView : TriggerContacts
     {
@@ -12,18 +12,11 @@ namespace PlatformerMVC
         private Color _defaultColor;
 
         public int Id => _id;
-        
-        #region Unity methods
 
         private void Awake()
         {
             _defaultColor = SpriteRenderer.color;
         }
-
-        #endregion
-
-        #region Methods
-
         public void ProcessComplete()
         {
             SpriteRenderer.color = _completedColor;
@@ -33,8 +26,6 @@ namespace PlatformerMVC
         {
             SpriteRenderer.color = _defaultColor;
         }
-
-        #endregion
     }
 }
 

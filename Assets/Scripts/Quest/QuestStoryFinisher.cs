@@ -1,7 +1,7 @@
 ﻿using Platformer;
 using UnityEngine;
 
-namespace PlatformerMVC
+namespace Platformer
 {
     internal class QuestStoryFinisher : IQuestStoryFinisher
     {

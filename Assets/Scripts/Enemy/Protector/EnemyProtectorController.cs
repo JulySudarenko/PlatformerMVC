@@ -8,7 +8,6 @@ namespace Platformer
 {
     internal class EnemyProtectorController : IInitialize, IFixedExecute, ICleanup
     {
-        // private Seeker _stalkerAISeeker;
         private Transform _protectorAITarget;
 
         private EnemyConfig _config;

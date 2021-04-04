@@ -1,6 +1,6 @@
 ﻿
 
-namespace PlatformerMVC
+namespace Platformer
 {
     public sealed class SwitchQuestModel : IQuestModel
     {

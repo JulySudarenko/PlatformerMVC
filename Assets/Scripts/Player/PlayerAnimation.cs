@@ -44,8 +44,14 @@ namespace Platformer
                 case PlayerState.Block:
                     _animationState = AnimState.Block;
                     break;
-                case PlayerState.Win:
+                case PlayerState.Win: 
                     _animationState = AnimState.Victory;
+                    break;
+                case PlayerState.Hit:
+                        _animationState = AnimState.Hit;
+                    break;
+                case PlayerState.Dead:
+                    _animationState = AnimState.Death;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(state), state, null);

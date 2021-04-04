@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PlatformerMVC
+namespace Platformer
 {
     public interface IQuest : IDisposable
     {

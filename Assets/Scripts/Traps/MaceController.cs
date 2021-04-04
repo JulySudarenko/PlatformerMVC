@@ -2,29 +2,38 @@
 
 namespace Platformer
 {
-    internal class MaceController
+    internal class MaceController : ICleanup
     {
-        private HingeJoint2D _joint;
-        private ITimeRemaining _timeRemaining;
+        private readonly HingeJoint2D _joint;
+        private readonly ITimeRemaining _timeRemainingAdd;
+        private ITimeRemaining _timeRemainingStop;
 
-        public MaceController(GameObject mace)
+        public MaceController(GameObject mace, DamagingObjects damagingObjects)
         {
             _joint = mace.GetComponent<HingeJoint2D>();
             AddMotorForce();
-            _timeRemaining = new TimeRemaining(AddMotorForce, 4.4f, true);
-            _timeRemaining.AddTimeRemaining();
+            damagingObjects.AddDamagingObject(mace.GetInstanceID());
+            _timeRemainingAdd = new TimeRemaining(AddMotorForce, 4.4f, true);
+            _timeRemainingAdd.AddTimeRemaining();
         }
 
         private void AddMotorForce()
         {
             _joint.useMotor = true;
-            _timeRemaining = new TimeRemaining(StopMotorForce, 0.1f, false);
-            _timeRemaining.AddTimeRemaining();
+            _timeRemainingStop = new TimeRemaining(StopMotorForce, 0.1f, false);
+            _timeRemainingStop.AddTimeRemaining();
         }
 
         private void StopMotorForce()
         {
             _joint.useMotor = false;
+        }
+
+
+        public void Cleanup()
+        {
+            _timeRemainingAdd.RemoveTimeRemaining();
+            _timeRemainingStop.RemoveTimeRemaining();
         }
     }
 }

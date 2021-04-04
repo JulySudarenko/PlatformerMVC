@@ -5,12 +5,14 @@ namespace Platformer
 {
     internal class BridgeDivider : IInitialize, IExecute, ICleanup
     {
-        private List<DistanceJoint2D> _joints;
-        private Transform _bridge;
-        private TriggerContacts _contacts;
-        private int _contactCounter = 0;
-        private int _breakBridgeContact = 2;
+        private const int BREAK_BRIDGE_CONTACT = 2;
+        
+        private readonly List<DistanceJoint2D> _joints;
+        private readonly Transform _bridge;
+        private readonly TriggerContacts _contacts;
         private readonly int _contactID;
+        
+        private int _contactCounter = 0;
         private bool _hasDestroyed;
 
         public BridgeDivider(GameObject bridge, int contactID)
@@ -52,13 +54,10 @@ namespace Platformer
 
         public void Execute(float deltaTime)
         {
-            if (!_hasDestroyed)
+            if (!_hasDestroyed && _contactCounter > BREAK_BRIDGE_CONTACT)
             {
-                if (_contactCounter > _breakBridgeContact)
-                {
-                    BreakBridge();
-                    _hasDestroyed = true;
-                }
+                BreakBridge();
+                _hasDestroyed = true;
             }
         }
 

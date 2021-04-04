@@ -3,19 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-namespace PlatformerMVC
+namespace Platformer
 {
     public sealed class ResettableQuestStory : IQuestStory
     {
-        #region Fields
-
         private readonly List<IQuest> _questsCollection;
         private int _currentIndex;
-
-        #endregion
-
-
-        #region Life Cycle
 
         public ResettableQuestStory(List<IQuest> questsCollection)
         {
@@ -23,11 +16,6 @@ namespace PlatformerMVC
             Subscribe();
             ResetQuests();
         }
-
-        #endregion
-
-
-        #region Methods
 
         private void Subscribe()
         {
@@ -68,11 +56,6 @@ namespace PlatformerMVC
             }
         }
 
-        #endregion
-
-
-        #region IQuestStory
-
         public bool IsDone => _questsCollection.All(value => value.IsCompleted);
 
         public void Dispose()
@@ -83,8 +66,6 @@ namespace PlatformerMVC
                 quest.Dispose();
             }
         }
-
-        #endregion
     }
 }
 

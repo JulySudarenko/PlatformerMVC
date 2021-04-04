@@ -1,5 +1,5 @@
 ﻿
-namespace PlatformerMVC
+namespace Platformer
 {
     public interface IQuestModel
     {

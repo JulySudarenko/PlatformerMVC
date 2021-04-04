@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ namespace Platformer
 {
     internal class CoinPlaceController : IExecute, IInitialize, ICleanup
     {
+        public Action<int> OnCoinTaken;
         private readonly List<Transform> _originalplaces;
         private readonly List<Vector3> _allPlaces;
         private readonly List<CoinController> _coinControllers;
@@ -18,6 +20,7 @@ namespace Platformer
         private readonly int _countOnPlatform;
         private readonly int _contactID;
         private float _controlPoint;
+        private int _coinsCounter;
 
         public CoinPlaceController(List<Transform> platforms, ItemConfig coinConfig, ICamera camera, int contactID)
         {

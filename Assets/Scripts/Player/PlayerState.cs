@@ -9,6 +9,8 @@
         SwordAttack = 4,
         FireAttack = 5,
         Block = 6,
-        Win = 7
+        Win = 7,
+        Hit = 8,
+        Dead = 9
     }
 }

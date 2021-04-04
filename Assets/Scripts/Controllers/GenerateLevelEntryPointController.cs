@@ -14,14 +14,15 @@ namespace Platformer
 
         private void Awake()
         {
+            var damagingObjects = new DamagingObjects();
             var player = new PlayerInitialization(new PlayerFactory(_charactersData.PlayerConfig));
             var cameraController = new CameraController(player.Transform);
             var inputInitialization = new InputInitialization();
             var playerStateController = new PlayerStateController(player, _charactersData.PlayerConfig,
-                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput());
+                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput(), damagingObjects.AllDamagingObjects);
             
             _levelGenerator = new GeneratorLevelController(_environmentData.LevelConfig, player.Transform.position);
-            //_levelGenerator = new GeneratorLevelController(_levelView, player.Transform.position);
+
             _controllers = new Controllers();
             _controllers.Add(_levelGenerator);
             _controllers.Add(cameraController);

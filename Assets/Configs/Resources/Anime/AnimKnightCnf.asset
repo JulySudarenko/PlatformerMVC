@@ -52,6 +52,10 @@ MonoBehaviour:
   - Track: 5
     Sprites:
     - {fileID: 2002011990687823350, guid: 97b66dffb07ccfe48a6fe981c87cf40a, type: 3}
+    - {fileID: 2002011990687823350, guid: 97b66dffb07ccfe48a6fe981c87cf40a, type: 3}
+    - {fileID: 2002011990687823350, guid: 97b66dffb07ccfe48a6fe981c87cf40a, type: 3}
+    - {fileID: 997742604210662546, guid: 71a762c8ac489fc4da05f2ffdc581140, type: 3}
+    - {fileID: 997742604210662546, guid: 71a762c8ac489fc4da05f2ffdc581140, type: 3}
     - {fileID: 997742604210662546, guid: 71a762c8ac489fc4da05f2ffdc581140, type: 3}
   - Track: 6
     Sprites:

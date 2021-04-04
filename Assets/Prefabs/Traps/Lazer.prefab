@@ -140,7 +140,6 @@ GameObject:
   - component: {fileID: 7061686456912404766}
   - component: {fileID: 7061686456912404767}
   - component: {fileID: 7061686456912404764}
-  - component: {fileID: 7061686456912404753}
   m_Layer: 0
   m_Name: Lazer
   m_TagString: Untagged
@@ -225,18 +224,6 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
---- !u!114 &7061686456912404753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7061686456912404762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679114bddb0b4c548d44e0cd41822c8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7061686458864570076
 GameObject:
   m_ObjectHideFlags: 0

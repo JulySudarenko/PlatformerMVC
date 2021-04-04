@@ -2,7 +2,7 @@
 
 namespace Platformer
 {
-    internal class EnemyStalkerController : IInitialize, IFixedExecute
+    internal class EnemyStalkerController : IInitialize, IFixedExecute, ICleanup
     { 
         private readonly EnemyConfig _config;
         private readonly Transform _stalkerAITarget;
@@ -23,6 +23,11 @@ namespace Platformer
         public void FixedExecute(float deltaTime)
         {
             if (_stalkerAI != null) _stalkerAI.FixedExecute(deltaTime);
+        }
+
+        public void Cleanup()
+        {
+            _stalkerAI.Cleanup();
         }
     }
 }

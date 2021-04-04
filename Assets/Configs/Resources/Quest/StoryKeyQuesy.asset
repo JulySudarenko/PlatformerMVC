@@ -17,4 +17,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d73b80a4efee0e14794fb1805c090b9c, type: 2}
   - {fileID: 11400000, guid: 6fc8b77abce22974fa4e631ccf3b087a, type: 2}
   - {fileID: 11400000, guid: 98158d17a6514d444ae4a79220ba1def, type: 2}
-  questStoryType: 1
+  questStoryType: 0

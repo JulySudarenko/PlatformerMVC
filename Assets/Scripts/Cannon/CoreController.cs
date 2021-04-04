@@ -14,14 +14,14 @@ namespace Platformer
         private float _angle;
         public bool IsActive { get; private set; }
 
-        public CoreController(Transform core, CannonConfig config)
+        public CoreController(Transform core, CannonConfig config, DamagingObjects damagingObjects)
         {
             _core = core;
             if (_core.TryGetComponent<TrailRenderer>(out var component))
             {
                 _trail = component;
             }
-
+            damagingObjects.AddDamagingObject(core.gameObject.GetInstanceID());
             _rigidbody = _core.gameObject.GetOrAddComponent<Rigidbody2D>();
             _config = config;
             IsActive = false;
@@ -51,6 +51,11 @@ namespace Platformer
             _core.localPosition = Vector3.zero;
             _core.localRotation = Quaternion.identity;
             _trail.Clear();
+        }
+
+        public void Cleanup()
+        {
+            _timeRemaining.RemoveTimeRemaining();
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace PlatformerMVC
+namespace Platformer
 {
     public sealed class QuestStory : IQuestStory
     {

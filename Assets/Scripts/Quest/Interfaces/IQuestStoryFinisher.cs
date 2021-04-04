@@ -1,4 +1,4 @@
-﻿namespace PlatformerMVC
+﻿namespace Platformer
 {
     public interface IQuestStoryFinisher
     {

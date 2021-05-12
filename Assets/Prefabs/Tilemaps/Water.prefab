@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4110257087078335043}
   - component: {fileID: 4110257087078335040}
   - component: {fileID: 4110257087078335041}
+  - component: {fileID: 3153115834020034843}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -110,7 +111,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -143,7 +144,7 @@ BuoyancyEffector2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4110257087078335047}
   m_Enabled: 1
-  m_UseColliderMask: 1
+  m_UseColliderMask: 0
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -154,3 +155,15 @@ BuoyancyEffector2D:
   m_FlowAngle: 0
   m_FlowMagnitude: 0
   m_FlowVariation: 0
+--- !u!114 &3153115834020034843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4110257087078335047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679114bddb0b4c548d44e0cd41822c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

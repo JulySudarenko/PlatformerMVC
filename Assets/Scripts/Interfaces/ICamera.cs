@@ -2,7 +2,7 @@
 
 namespace Platformer
 {
-    interface ICamera
+    public interface ICamera
     {
         Transform CameraTransform { get; }
     }

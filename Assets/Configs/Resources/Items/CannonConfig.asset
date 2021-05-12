@@ -25,6 +25,6 @@ MonoBehaviour:
   _corePower: 0
   _groundLevel: 0.2
   _gravityForce: -5
-  _spawnCoreTime: 2
+  _spawnCoreTime: 4
   _lifeCoreTime: 5
   _corePoolSize: 5

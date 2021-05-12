@@ -6,7 +6,7 @@ namespace Platformer
 {
     internal class LevelCompleteManager : ICleanup
     {
-        private readonly IWinState _state;
+        private readonly IEndGameState _state;
         private readonly List<TriggerContacts> _deathZones;
         private readonly TriggerContacts _winZone;
         private readonly TriggerContacts _character;
@@ -16,7 +16,7 @@ namespace Platformer
         private ITimeRemaining _timeRemaining;
 
         public LevelCompleteManager(Transform character, List<TriggerContacts> deathZones, TriggerContacts winZone,
-            IWinState state, int contactID)
+            IEndGameState state, int contactID)
         {
             _startPosition = character.position;
             _contactID = contactID;
@@ -37,6 +37,8 @@ namespace Platformer
         {
             if (contactID == _contactID)
             {
+                _state.IsEndGameState(PlayerState.Dead);
+                SceneManager.LoadScene(0);
                 DeactivatePlayer();
             }
         }
@@ -45,6 +47,7 @@ namespace Platformer
         {
             if (contactID == _contactID)
             {
+                _state.IsEndGameState(PlayerState.Win);
                 SceneManager.LoadScene(1);
             }
         }
@@ -72,6 +75,7 @@ namespace Platformer
             }
 
             _winZone.IsContact -= OnWinZoneContact;
+            _timeRemaining.RemoveTimeRemaining();
         }
     }
 }

@@ -236,28 +236,37 @@
             <e p="CoinsListener.cs" t="Include" />
           </e>
           <e p="Configs" t="Include">
-            <e p="AnimationData.cs" t="Include" />
             <e p="BackGroundConfig.cs" t="Include" />
             <e p="CannonConfig.cs" t="Include" />
-            <e p="CharactersData.cs" t="Include" />
+            <e p="Data" t="Include">
+              <e p="AnimationData.cs" t="Include" />
+              <e p="CharactersData.cs" t="Include" />
+              <e p="EnvironmentData.cs" t="Include" />
+              <e p="UIData.cs" t="Include" />
+            </e>
             <e p="EnemyConfig.cs" t="Include" />
-            <e p="EnvironmentData.cs" t="Include" />
+            <e p="GameDisplayData.cs" t="Include" />
             <e p="ItemConfig.cs" t="Include" />
             <e p="LevelConfig.cs" t="Include" />
+            <e p="MenuDisplayData.cs" t="Include" />
             <e p="PlayerConfig.cs" t="Include" />
-            <e p="QuestConfig.cs" t="Include" />
-            <e p="QuestItemConfig.cs" t="Include" />
-            <e p="QuestStoryConfig.cs" t="Include" />
+            <e p="Quest" t="Include">
+              <e p="QuestConfig.cs" t="Include" />
+              <e p="QuestItemConfig.cs" t="Include" />
+              <e p="QuestStoryConfig.cs" t="Include" />
+            </e>
             <e p="SpriteAnimatorConfig.cs" t="Include" />
           </e>
           <e p="ContactProcessing" t="Include">
             <e p="ContactPoller.cs" t="Include" />
+            <e p="Hit.cs" t="Include" />
             <e p="TriggerContacts.cs" t="Include" />
           </e>
           <e p="Controllers" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="CoinPlaceController.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
+            <e p="DamagingObjects.cs" t="Include" />
             <e p="GenerateLevelEntryPointController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="InputInitialization.cs" t="Include" />
@@ -312,15 +321,50 @@
             <e p="ICamera.cs" t="Include" />
             <e p="ICleanup.cs" t="Include" />
             <e p="IController.cs" t="Include" />
+            <e p="IEndGameState.cs" t="Include" />
             <e p="IExecute.cs" t="Include" />
             <e p="IFixedExecute.cs" t="Include" />
             <e p="IInitialize.cs" t="Include" />
-            <e p="IWinState.cs" t="Include" />
+          </e>
+          <e p="MenuUI" t="Include">
+            <e p="DisplayCommand" t="Include">
+              <e p="DisplayCommand.cs" t="Include" />
+              <e p="GameDisplayCommand.cs" t="Include" />
+              <e p="MainUICommand.cs" t="Include" />
+              <e p="MenuDisplayCommand.cs" t="Include" />
+              <e p="StateUI.cs" t="Include" />
+            </e>
+            <e p="DisplayModel" t="Include">
+              <e p="DisplayGamePoints.cs" t="Include" />
+              <e p="DisplayHealthPoints.cs" t="Include" />
+              <e p="DisplayInitialization.cs" t="Include" />
+              <e p="GameDisplayFactory.cs" t="Include" />
+              <e p="GameDisplayInitialization.cs" t="Include" />
+              <e p="IGameDisplay.cs" t="Include" />
+              <e p="IMenuDisplay.cs" t="Include" />
+              <e p="MenuDisplayFactory.cs" t="Include" />
+              <e p="MenuDisplayInitialization.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Old" t="Include">
+            <e p="Attack" t="Include">
+              <e p="AttackLock.cs" t="Include" />
+              <e p="InputAttackController.cs" t="Include" />
+              <e p="InputAttackControllerProxy.cs" t="Include" />
+              <e p="ShotPoint.cs" t="Include" />
+            </e>
+            <e p="BulletModel" t="Include">
+              <e p="BulletFactory.cs" t="Include" />
+              <e p="BulletInitialization.cs" t="Include" />
+              <e p="BulletPool.cs" t="Include" />
+              <e p="IBulletFactory.cs" t="Include" />
+            </e>
           </e>
           <e p="Player" t="Include">
             <e p="PlayerAnimation.cs" t="Include" />
             <e p="PlayerAttack.cs" t="Include" />
             <e p="PlayerFactory.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerState.cs" t="Include" />
           </e>

@@ -22,12 +22,12 @@ namespace Platformer
         private bool _doJump;
 
         public PlayerMovement(PlayerInitialization player, PlayerConfig config,
-            (IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) input)
+            (IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) input, ContactPoller contactPoller)
         {
             _player = player.Transform;
             _rigidbody2D = player.Rigidbody;
             _config = config;
-            _contactPoller = new ContactPoller(player.Collider);
+            _contactPoller = contactPoller;
             _horizontalInputProxy = input.inputHorizontal;
             _verticalInputProxy = input.inputVertical;
             _horizontalInputProxy.AxisOnChange += HorizontalOnAxisOnChange;

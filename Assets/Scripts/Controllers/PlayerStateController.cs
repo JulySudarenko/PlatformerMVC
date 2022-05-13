@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 namespace Platformer
 {
@@ -18,27 +19,30 @@ namespace Platformer
         public PlayerStateController(PlayerInitialization player, PlayerConfig config,
             (IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) moveInput,
             (IUserPressButtonProxy inputSwordAttack, IUserPressButtonProxy inputFireAttack,
-                IUserPressButtonProxy inputBlock) attackInput, List<int> damagingObjects)
+                IUserPressButtonProxy inputBlock) attackInput, List<int> damagingObjects,
+            DamagingObjects damagingEnemyObjects)
         {
             var contactPoller = new ContactPoller(player.Collider);
             _state = PlayerState.Stay;
 
             _playerAnimation = new PlayerAnimation(player.SpriteRenderer, config);
             _playerMovement = new PlayerMovement(player, config, moveInput, contactPoller);
-            _playerAttack = new PlayerAttack(player.Transform, config, attackInput);
-            _playerHealth = new PlayerHealth(damagingObjects, contactPoller, player.Hit, player.TriggerContacts, _state, config.Health);
-            
+            _playerAttack = new PlayerAttack(player.Transform, config, attackInput, damagingEnemyObjects);
+            _playerHealth = new PlayerHealth(damagingObjects, contactPoller, player.Transform, player.Hit,
+                player.TriggerContacts, config.Health);
+
             _onPlayerStateChange += _playerAnimation.OnChangeState;
+            _onPlayerStateChange += _playerHealth.StatusTrack;
             _playerMovement.OnMoveStateChange += UpdateState;
             _playerAttack.OnAttackStateChange += UpdateState;
             _playerHealth.OnDamage += UpdateState;
         }
-        
+
         public void Initialize()
         {
             OnChangeHealth?.Invoke(_playerHealth.HealthCount);
         }
-        
+
         public void FixedExecute(float deltaTime)
         {
             _playerAnimation.FixedExecute(deltaTime);
@@ -48,7 +52,7 @@ namespace Platformer
                 _playerAttack.FixedExecute(deltaTime);
             }
         }
-       
+
         public void IsEndGameState(PlayerState state)
         {
             UpdateState(state);
@@ -56,43 +60,44 @@ namespace Platformer
 
         private void UpdateState(PlayerState newState)
         {
-            switch (newState)
-            {
-                case PlayerState.Stay:
-                    break;
-                case PlayerState.Walk:
-                case PlayerState.JumpUp:
-                case PlayerState.JumpDown:
-                    if (_state == PlayerState.Stay || _state == PlayerState.Walk ||
-                        _state == PlayerState.JumpDown || _state == PlayerState.JumpUp)
+                switch (newState)
+                {
+                    case PlayerState.Stay:
+                        break;
+                    case PlayerState.Walk:
+                    case PlayerState.JumpUp:
+                    case PlayerState.JumpDown:
+                        if (_state == PlayerState.Stay || _state == PlayerState.Walk ||
+                            _state == PlayerState.JumpDown || _state == PlayerState.JumpUp)
+                            _state = newState;
+                        break;
+                    case PlayerState.SwordAttack:
+                    case PlayerState.FireAttack:
+                    case PlayerState.Block:
+                        if (_state != PlayerState.Dead || _state != PlayerState.Win || _state != PlayerState.Hit)
+                            _state = newState;
+                        break;
+                    case PlayerState.Hit:
+                        if (_state != PlayerState.Dead || _state != PlayerState.Win)
+                        {
+                            _state = newState;
+                            OnChangeHealth?.Invoke(_playerHealth.HealthCount);
+                            LockUp(0.5f);
+                        }
+                        break;
+                    case PlayerState.Dead:
                         _state = newState;
-                    break;
-                case PlayerState.SwordAttack:
-                case PlayerState.FireAttack:
-                case PlayerState.Block:
-                    if (_state != PlayerState.Dead || _state != PlayerState.Win || _state != PlayerState.Hit)
-                        _state = newState;
-                    break;
-                case PlayerState.Hit:
-                    if (_state != PlayerState.Dead || _state != PlayerState.Win)
-                    {
-                        _state = newState;
+                        LockUp(5.0f);
                         OnChangeHealth?.Invoke(_playerHealth.HealthCount);
-                        LockUp(0.5f);
-                    }
-                    break;
-                case PlayerState.Dead:
-                    _state = newState;
-                    LockUp(5.0f);
-                    OnChangeHealth?.Invoke(_playerHealth.HealthCount);
-                    break;
-                case PlayerState.Win:
-                    _state = newState;
-                    LockUp(5.0f);
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
-            }
+                        break;
+                    case PlayerState.Win:
+                        _state = newState;
+                        LockUp(5.0f);
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
+                }
+
 
             _onPlayerStateChange?.Invoke(_state);
             if (newState != PlayerState.SwordAttack && newState != PlayerState.Hit)
@@ -108,7 +113,10 @@ namespace Platformer
 
         private void Unlock()
         {
-            _isLock = false;
+            if (_state == PlayerState.Win || _state == PlayerState.Dead)
+                SceneManager.LoadScene(0);
+            else
+                _isLock = false;
         }
 
         public void Cleanup()
@@ -122,6 +130,5 @@ namespace Platformer
             _playerAttack.Cleanup();
             _playerHealth.Cleanup();
         }
-
     }
 }

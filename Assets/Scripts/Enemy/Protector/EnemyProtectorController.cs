@@ -8,6 +8,7 @@ namespace Platformer
 {
     internal class EnemyProtectorController : IInitialize, IFixedExecute, ICleanup
     {
+        private readonly List<int> _killingObjects;
         private readonly Transform _protectorAITarget;
         private readonly EnemyConfig _config;
         private readonly DamagingObjects _damagingObjects;
@@ -17,9 +18,10 @@ namespace Platformer
         private ProtectorAI _protectorAI;
         private ProtectedZone _protectedZone;
 
-        public EnemyProtectorController(EnemyConfig config, Transform target, DamagingObjects damagingObjects)
+        public EnemyProtectorController(EnemyConfig config, Transform target, DamagingObjects damagingObjects, List<int> killingObjects)
         {
             _damagingObjects = damagingObjects;
+            _killingObjects = killingObjects;
 
             _config = config != null ? config : throw new ArgumentException(nameof(config));
             _protectorAITarget = target != null ? target : throw new ArgumentException(nameof(target));
@@ -28,7 +30,7 @@ namespace Platformer
         public void Initialize()
         {
             _protectorAI = new ProtectorAI(_config, new PatrolAIModel(_config.WayPoints.ToArray()), _protectorAITarget,
-                _damagingObjects);
+                _damagingObjects, _killingObjects);
             _protectorAI.Initialize();
             _protectorAI.Init();
 
@@ -42,6 +44,7 @@ namespace Platformer
         {
             _protectorAI.Deinit();
             _protectedZone.Deinit();
+            _protectorAI.Cleanup();
         }
 
         public void FixedExecute(float deltaTime)

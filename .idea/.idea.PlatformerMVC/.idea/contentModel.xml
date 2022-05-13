@@ -346,27 +346,18 @@
               <e p="MenuDisplayInitialization.cs" t="Include" />
             </e>
           </e>
-          <e p="Old" t="Include">
-            <e p="Attack" t="Include">
-              <e p="AttackLock.cs" t="Include" />
-              <e p="InputAttackController.cs" t="Include" />
-              <e p="InputAttackControllerProxy.cs" t="Include" />
-              <e p="ShotPoint.cs" t="Include" />
-            </e>
-            <e p="BulletModel" t="Include">
-              <e p="BulletFactory.cs" t="Include" />
-              <e p="BulletInitialization.cs" t="Include" />
-              <e p="BulletPool.cs" t="Include" />
-              <e p="IBulletFactory.cs" t="Include" />
-            </e>
-          </e>
           <e p="Player" t="Include">
+            <e p="Block.cs" t="Include" />
+            <e p="FireAttack.cs" t="Include" />
+            <e p="FireBall.cs" t="Include" />
             <e p="PlayerAnimation.cs" t="Include" />
             <e p="PlayerAttack.cs" t="Include" />
             <e p="PlayerFactory.cs" t="Include" />
             <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerState.cs" t="Include" />
+            <e p="ShotPoint.cs" t="Include" />
+            <e p="SwordAttack.cs" t="Include" />
           </e>
           <e p="Quest" t="Include">
             <e p="Interfaces" t="Include">

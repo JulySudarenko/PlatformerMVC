@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-
+﻿
 namespace Platformer
 {
     public class DisplayInitialization : IInitialize, IExecute, ICleanup
@@ -41,7 +40,6 @@ namespace Platformer
 
         private void ShowGameScore(int points)
         {
-            Debug.Log(points);
             _gamePoints.ShowGamePoints(points);
         }
 

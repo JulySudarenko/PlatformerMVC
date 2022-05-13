@@ -27,3 +27,14 @@ MonoBehaviour:
   _gravityForce: -10
   _animationSpeed: 10
   _health: 10
+  FireBallPrefab: {fileID: 8589957861386205915, guid: b1c26a031403c384c9d5493e060d593a,
+    type: 3}
+  BarrelPosition: {fileID: 2906556731594945404, guid: 581a7716a786c5a419a178d30ecab9c6,
+    type: 3}
+  _fireAttackForce: 10
+  _fireBallLifeTime: 1
+  _poolSize: 10
+  SwordPrefab: {fileID: 4094044561042374640, guid: 556be64e65541dc46905bb1e19f4cc79,
+    type: 3}
+  ShieldPrefab: {fileID: 3526518185231024300, guid: 1dfaa586bbca95b43866585dab41554d,
+    type: 3}

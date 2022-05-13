@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Platformer
 {
@@ -14,14 +15,6 @@ namespace Platformer
         public void AddDamagingObject(int newObject)
         {
             AllDamagingObjects.Add(newObject);
-        }
-
-        public void AddManyDamagingObject(int[] newObjects)
-        {
-            for (int i = 0; i < newObjects.Length; i++)
-            {
-                AllDamagingObjects.Add(newObjects[i]);
-            }
         }
     }
 }

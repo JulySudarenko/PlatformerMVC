@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Pathfinding;
 using UnityEngine;
 
@@ -6,21 +7,25 @@ namespace Platformer
 {
     internal class ProtectorAI : IProtector
     {
+        private readonly List<int> _killingObjects;
         private readonly EnemyConfig _config;
         private readonly Transform _target;
         private readonly PatrolAIModel _model;
         private readonly DamagingObjects _damagingObjects;
+        private ITimeRemaining _timeRemainingContact;
+        private Hit _hit;
         private InitializeCharacter _enemy;
         private SpriteAnimator _animator;
         private AIDestinationSetter _destinationSetter;
         private AIPatrolPath _patrolPath;
         private bool _isPatrolling;
 
-        public ProtectorAI(EnemyConfig config, PatrolAIModel model, Transform target, DamagingObjects damagingObjects)
+        public ProtectorAI(EnemyConfig config, PatrolAIModel model, Transform target, DamagingObjects damagingObjects, List<int> killingObjects)
         {
             _config = config;
             _target = target;
             _damagingObjects = damagingObjects;
+            _killingObjects = killingObjects;
             _model = model != null ? model : throw new ArgumentException(nameof(model));
         }
 
@@ -32,6 +37,8 @@ namespace Platformer
             _enemy.Transform.position = _config.WayPoints[0].position;
             _animator = new SpriteAnimator(_config.EnemyAnimatorCnf);
             _animator.StartAnimation(_enemy.SpriteRenderer, AnimState.Run, true, _config.EnemyAnimationSpeed);
+            _hit = _enemy.HitInfo;
+            _hit.IsContact += IsDead;
 
             if (_enemy.Transform.TryGetComponent<AIDestinationSetter>(out var setter))
             {
@@ -77,6 +84,30 @@ namespace Platformer
         {
             _isPatrolling = true;
             _destinationSetter.target = _model.GetClosestTarget(_enemy.Transform.position);
+        }
+        
+        private void IsDead(int contactID)
+        {
+            foreach (var killer in _killingObjects)
+            {
+                if (contactID == killer)
+                {
+                    _animator.StartAnimation(_enemy.SpriteRenderer, AnimState.Death, false, _config.EnemyAnimationSpeed);
+                    _timeRemainingContact = new TimeRemaining(Deactivate, 1.5f, false);
+                    _timeRemainingContact.AddTimeRemaining();
+                }
+            }
+        }
+
+        private void Deactivate()
+        {
+            _enemy.Transform.gameObject.SetActive(false);
+            _timeRemainingContact.RemoveTimeRemaining();
+        }
+        
+        public void Cleanup()
+        {
+            _timeRemainingContact.RemoveTimeRemaining();
         }
     }
 }

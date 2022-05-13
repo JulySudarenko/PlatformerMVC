@@ -9,48 +9,58 @@ namespace Platformer
         private readonly IUserPressButtonProxy _swordAttackInputProxy;
         private readonly IUserPressButtonProxy _fireAttackInputProxy;
         private readonly IUserPressButtonProxy _blockInputProxy;
-        private Transform _player;
-        private PlayerConfig _playerConfig;
-        private bool _swordAttack;
-        private bool _fireAttack;
-        private bool _block;
+        private readonly FireAttack _fireAttack;
+        private readonly SwordAttack _swordAttack;
+        private readonly Block _block;
+        private bool _isSwordAttack;
+        private bool _isFireAttack;
+        private bool _isBlock;
 
         public PlayerAttack(Transform player, PlayerConfig config,
             (IUserPressButtonProxy inputSwordAttack, IUserPressButtonProxy inputFireAttack,
-                IUserPressButtonProxy inputBlock) attackInput)
+                IUserPressButtonProxy inputBlock) attackInput, DamagingObjects damagingObjects)
         {
-            _player = player;
-            _playerConfig = config;
             _swordAttackInputProxy = attackInput.inputSwordAttack;
             _fireAttackInputProxy = attackInput.inputFireAttack;
             _blockInputProxy = attackInput.inputBlock;
             _swordAttackInputProxy.OnButtonDown += SwordAttackOnAxisOnChange;
             _fireAttackInputProxy.OnButtonDown += FireAttackOnAxisOnChange;
             _blockInputProxy.OnButtonDown += BlockOnAxisOn;
+            _fireAttack = new FireAttack(config, player, damagingObjects);
+            _swordAttack = new SwordAttack(config.SwordPrefab, damagingObjects, player);
+            _block = new Block(config.ShieldPrefab, player);
         }
 
-        private void SwordAttackOnAxisOnChange(bool value) => _swordAttack = value;
-        private void FireAttackOnAxisOnChange(bool value) => _fireAttack = value;
-        private void BlockOnAxisOn(bool value) => _block = value;
+        private void SwordAttackOnAxisOnChange(bool value) => _isSwordAttack = value;
+        private void FireAttackOnAxisOnChange(bool value) => _isFireAttack = value;
+        private void BlockOnAxisOn(bool value) => _isBlock = value;
 
         public void FixedExecute(float deltaTime)
         {
-            if (_block)
+            if (_isBlock)
             {
-                Debug.Log("Block is work!");
                 OnAttackStateChange?.Invoke(PlayerState.Block);
+                _block.PutUpShield();
+            }
+            else
+            {
+                _block.RemoveShield();
             }
 
-            if (_fireAttack)
+            if (_isFireAttack)
             {
                 OnAttackStateChange?.Invoke(PlayerState.FireAttack);
-                Debug.Log("Fire attack is work!");
+                _fireAttack.AttackFire();
             }
 
-            if (_swordAttack)
+            if (_isSwordAttack)
             {
                 OnAttackStateChange?.Invoke(PlayerState.SwordAttack);
-                Debug.Log("Sword attack is work!");
+                _swordAttack.StrikeSword();
+            }
+            else
+            {
+                _swordAttack.RemoveSword();
             }
         }
 
@@ -59,6 +69,7 @@ namespace Platformer
             _swordAttackInputProxy.OnButtonDown -= SwordAttackOnAxisOnChange;
             _fireAttackInputProxy.OnButtonDown -= FireAttackOnAxisOnChange;
             _blockInputProxy.OnButtonDown -= BlockOnAxisOn;
+            _fireAttack.Cleanup();
         }
     }
 }

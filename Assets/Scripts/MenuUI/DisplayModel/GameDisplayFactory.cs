@@ -15,7 +15,7 @@ namespace Platformer
             _data = data;
             _canvas = canvas;
         }
-        
+
         public GameObject CreateGamePanel()
         {
             _panel = Object.Instantiate(_data.GamePanel, _canvas.transform);
@@ -27,12 +27,6 @@ namespace Platformer
             Image heart = Object.Instantiate(_data.Hearts, _panel.transform);
             return heart;
         }
-        // public Text CreateHealthPointsText()
-        // {
-        //     var text = Object.Instantiate(_data.HealthPoints, _panel.transform);
-        //     return text;
-        // }
-        
 
         public Text CreateGamePointsText()
         {

@@ -26,24 +26,25 @@ namespace Platformer
 
         private void Awake()
         {
-            var damagingObjects = new DamagingObjects();
+            var damagingPlayerObjects = new DamagingObjects();
+            var damagingEnemyObjects = new DamagingObjects();
             var player = new PlayerInitialization(new PlayerFactory(_charactersData.PlayerConfig));
             var cameraController = new CameraController(player.Transform);
             var parallaxController = new ParallaxController(cameraController, _environmentData.BackGroundConfig);
             var inputInitialization = new InputInitialization();
             var playerStateController = new PlayerStateController(player, _charactersData.PlayerConfig,
-                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput(), damagingObjects.AllDamagingObjects);
+                inputInitialization.GetMoveInput(), inputInitialization.GetAttackInput(), damagingPlayerObjects.AllDamagingObjects, damagingEnemyObjects);
             var coinController = new CoinPlaceController(parallaxController.CoinsPlaces, _environmentData.CoinCnf,
                 cameraController, player.ID);
             var displayInitialization = new DisplayInitialization(_uiData, playerStateController, coinController);
             
             var cannon = new AimingCannonController(_cannon.TurretTransform, player.Transform);
             var coreEmitter = new CoresEmitterController(_cannon.EmitterTransform, _cannon.TurretTransform,
-                _environmentData.CannonConfig, damagingObjects);
-            var mace = new MaceController(_mace, damagingObjects);
+                _environmentData.CannonConfig, damagingPlayerObjects);
+            var mace = new MaceController(_mace, damagingPlayerObjects);
             var bridge = new BridgeDivider(_bridge, player.ID);
-            damagingObjects.AddDamagingObject(_saw.GetInstanceID());
-            damagingObjects.AddDamagingObject(_lazer.GetInstanceID());
+            damagingPlayerObjects.AddDamagingObject(_saw.GetInstanceID());
+            damagingPlayerObjects.AddDamagingObject(_lazer.GetInstanceID());
             
             var questStoryFinisher = new QuestStoryFinisher(_finishPoint);
 
@@ -58,12 +59,11 @@ namespace Platformer
             _controllers.Add(coinController);
             _controllers.Add(new LevelCompleteManager(player.Transform, parallaxController.DeathZones, _finishPoint,
                 playerStateController, player.ID));
-
-
-            _controllers.Add(new EnemySimpleController(_charactersData.SnailEnemyCnf, damagingObjects));
-            _controllers.Add(new EnemySimpleController(_charactersData.SlugEnemyCnf, damagingObjects));
-            _controllers.Add(new EnemyStalkerController(_charactersData.BatEnemyCnf, player.Transform, damagingObjects));
-            _controllers.Add(new EnemyProtectorController(_charactersData.EvilBatEnemyCnf, player.Transform, damagingObjects));
+           
+            _controllers.Add(new EnemySimpleController(_charactersData.SnailEnemyCnf, damagingPlayerObjects, damagingEnemyObjects.AllDamagingObjects));
+            _controllers.Add(new EnemySimpleController(_charactersData.SlugEnemyCnf, damagingPlayerObjects, damagingEnemyObjects.AllDamagingObjects));
+            _controllers.Add(new EnemyStalkerController(_charactersData.BatEnemyCnf, player.Transform, damagingPlayerObjects, damagingEnemyObjects.AllDamagingObjects));
+            _controllers.Add(new EnemyProtectorController(_charactersData.EvilBatEnemyCnf, player.Transform, damagingPlayerObjects, damagingEnemyObjects.AllDamagingObjects));
 
             _controllers.Add(cannon);
             _controllers.Add(coreEmitter);

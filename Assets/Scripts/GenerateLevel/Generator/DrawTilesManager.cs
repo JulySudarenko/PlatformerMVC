@@ -4,7 +4,6 @@ using Platformer;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using static Level.DungeonTiles;
-using static Platformer.BuildAssistant;
 using Object = UnityEngine.Object;
 
 namespace Level
